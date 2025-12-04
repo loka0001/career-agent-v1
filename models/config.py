@@ -10,7 +10,7 @@ class ChatbotConfig:
     resume_path: str = "me/resume.pdf"
     linkedin_path: str = "me/linkedin.pdf"
     summary_path: str = "me/summary.txt"
-    model: str = "gpt-4o-mini-2024-07-18"  # Primary chat model
+    model: str = "llama3.1"  # Primary chat model
     evaluator_model: str = "gemini-2.5-flash"  # Evaluation model (different provider OK)
-    job_matching_model: str = "gpt-4o-2024-08-06"  # Model for job matching analysis
+    job_matching_model: str = "llama3.1"  # Model for job matching analysis
     job_match_threshold: str = "Good"  # Minimum match level for contact facilitation
