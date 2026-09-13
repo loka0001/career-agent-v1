@@ -1828,8 +1828,8 @@
     },
     {
       "path": "tests/unit/test_ci_workflow.py",
-      "sha256": "189751baafa968c9a4e1bf316b0e5e3a1f9e2c63648e8acbbf7f198bfe4ae43c",
-      "size_bytes": 2780
+      "sha256": "3d00e10804916c4bd7d529ac9d562abbac6a2499af5654cd30f69b9ee036c824",
+      "size_bytes": 2774
     },
     {
       "path": "tests/unit/test_commerce_security.py",
@@ -2597,7 +2597,7 @@
       "size_bytes": 1153
     }
   ],
-  "generated_at": "2026-09-13T06:07:10.985876+00:00",
+  "generated_at": "2026-09-13T06:11:04.434140+00:00",
   "purpose": "Verify the local source/config/docs handoff into the canonical Git repository.",
   "root": "."
 }

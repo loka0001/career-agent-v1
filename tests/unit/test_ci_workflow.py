@@ -86,5 +86,5 @@ def test_secret_scan_job_runs_repository_handoff_manifest_verifier() -> None:
 def test_secret_scan_job_keeps_git_and_release_integrity_gates() -> None:
     commands = _job_commands("secret-scan")
 
-    assert "uv run python scripts/verify_git_integrity.py --require-release-sha" in commands
+    assert "python3 scripts/verify_git_integrity.py --require-release-sha" in commands
     assert "uv run python scripts/verify_release.py" in commands
