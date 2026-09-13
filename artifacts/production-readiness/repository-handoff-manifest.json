@@ -98,8 +98,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "78dd53184cd538a080ea8a901f35e449c4852f29fa98759708a4118f2ccb9ffb",
-      "size_bytes": 3984
+      "sha256": "cef46c775007fece5dfa0a533728d83a96cfdefd7b050849329062605c40a510",
+      "size_bytes": 3987
     },
     {
       "path": ".gitignore",
@@ -2597,7 +2597,7 @@
       "size_bytes": 1153
     }
   ],
-  "generated_at": "2026-09-13T06:11:04.434140+00:00",
+  "generated_at": "2026-09-13T06:15:37.906586+00:00",
   "purpose": "Verify the local source/config/docs handoff into the canonical Git repository.",
   "root": "."
 }

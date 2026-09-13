@@ -80,7 +80,7 @@ jobs:
           VERIFY_POSTGRES_URL: postgresql://commerce:commerce_test@localhost:5432/commerce_test
         run: |
           sudo apt-get update
-          sudo apt-get install --yes postgresql-client
+          sudo apt-get install --yes postgresql-client-17
           uv run python scripts/verify_backup_restore.py
 
   frontend:
