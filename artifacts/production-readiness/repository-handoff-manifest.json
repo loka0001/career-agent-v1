@@ -1473,12 +1473,12 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "af97690cce56bde7c51acd529892b5259bf3bea6a60c9bae74f1c848741a9d7a",
-      "size_bytes": 1828
+      "sha256": "d4ce5e0dc9482263e6cb6a86a2332eca14ecfba43c8ceb5640cdb4fb492c6c5c",
+      "size_bytes": 1849
     },
     {
       "path": "requirements.txt",
-      "sha256": "2ae7ef65d1229a0a3b617c492c2d398d70a8a7fb5f4935d2323141b38eef58be",
+      "sha256": "77ca30509d8cff7ee5d71afaa0ed92da76c6799a542ad4ca0fea4d388ef8a159",
       "size_bytes": 290
     },
     {
@@ -1978,8 +1978,8 @@
     },
     {
       "path": "uv.lock",
-      "sha256": "491370ff09790158364cd97836bdb754b40a945253572a9f76ec27a9d79005ba",
-      "size_bytes": 651134
+      "sha256": "5c086d5eb7cb0c265a75ca81707f292da5cf201ebad295b40b6b5bef5b25e2b6",
+      "size_bytes": 650627
     },
     {
       "path": "vercel.json",
@@ -2597,7 +2597,7 @@
       "size_bytes": 1153
     }
   ],
-  "generated_at": "2026-09-13T05:50:13.610040+00:00",
+  "generated_at": "2026-09-13T05:55:34.027936+00:00",
   "purpose": "Verify the local source/config/docs handoff into the canonical Git repository.",
   "root": "."
 }

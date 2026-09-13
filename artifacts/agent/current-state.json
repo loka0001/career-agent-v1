@@ -1,0 +1,1598 @@
+{
+  "updated_at": "2026-09-11T03:27:00+03:00",
+  "agent_settings_checkpoint": {
+    "date": "2026-09-11",
+    "overall_v1_percent": 65,
+    "clone_readiness_percent": 95,
+    "frontend_tests": 92,
+    "frontend_test_files": 21,
+    "coverage_statements_percent": 66.99,
+    "coverage_branches_percent": 60.53,
+    "coverage_functions_percent": 64.36,
+    "coverage_lines_percent": 68.35,
+    "verified": "centralized Arabic/English assistant copy; server-snapshot dirty state; disabled-until-needed save; discard restores the saved persona without backend mutation; unload protection; separate save/test busy states; editable test message passes the production TypeScript build",
+    "browser_result": "fresh isolated SQLite demo; 20-route RTL/LTR UI matrix passed; Agent Settings desktop dirty/discard acceptance passed; screenshot visually inspected; accessibility, overflow, console, page, request and unexpected HTTP error collections empty",
+    "scope": "isolated local website demo only; no production, live-provider, managed-database or merchant-acceptance claim",
+    "next": "Team and permissions website-first secondary slice, then API keys/security where evidence justifies changes"
+  },
+  "website_integrations_settings_checkpoint": {
+    "date": "2026-09-10",
+    "overall_v1_percent": 65,
+    "clone_readiness_percent": 95,
+    "frontend_tests": 92,
+    "frontend_test_files": 21,
+    "coverage_statements_percent": 66.99,
+    "coverage_branches_percent": 60.53,
+    "coverage_functions_percent": 64.36,
+    "coverage_lines_percent": 68.35,
+    "coverage_note": "The denominator now includes the previously unimported Integrations implementation; the full coverage command passes.",
+    "integrations_verified": "compact default status overview; URL-backed Store, Meta and WhatsApp workspaces; OAuth callback routing; disconnected, Store setup and WhatsApp setup desktop evidence",
+    "settings_verified": "grouped Store profile, Brand identity and authoritative policies; server-snapshot dirty state; disabled-until-needed save; discard restores original without backend mutation; unload guard",
+    "browser_candidate": "G:\\Latest-Ai-Project\\.tools\\integrations-qa-20260910-1320",
+    "browser_result": "fresh locked bootstrap; agent-browser gut check; real worker journeys; 20-route UI matrix and desktop website screenshots passed with empty unexpected error collections",
+    "scope": "isolated local website demo only; mobile-specific design work deferred by user direction; live providers, managed database, deployment and merchant acceptance remain external",
+    "next": "justified secondary website surfaces and restrained motion/polish"
+  },
+  "content_hierarchy_and_vitest_security_checkpoint": {
+    "date": "2026-09-10",
+    "overall_v1_percent": 65,
+    "clone_readiness_percent": 95,
+    "frontend_tests": 87,
+    "frontend_test_files": 20,
+    "coverage_statements_percent": 79.0,
+    "coverage_branches_percent": 67.05,
+    "content_verified": "compact default review queue; explicit URL-backed creator; retained filters, unsaved edits and approval locks; fresh worker journey, Calendar and expanded bilingual responsive UI matrix passed with empty unexpected-error collections",
+    "dependency_security_verified": "Vitest, coverage-v8 and mocker 4.1.11; patched allowlist boundary present; npm ci and audit show zero vulnerabilities; independent bypass/regression review found no concrete issue",
+    "scope": "isolated local demo and development dependency only; live providers, managed database, deployment and merchant acceptance remain external",
+    "next": "Superseded by website_integrations_settings_checkpoint"
+  },
+  "content_queue_candidate": {
+    "date": "2026-09-09",
+    "frontend_tests": 86,
+    "source_checks": "tests/build/lint/format pass",
+    "changes": "Default compact review queue, URL-backed editor toggle, retained filters and unsaved captions with approval lock across review navigation",
+    "pending": "Creation-form hierarchy remains unfinished; review npm audit Vitest development-chain advisory GHSA-82fw-gwwq-j7x9 and targeted 4.1.11 upgrade",
+    "browser_acceptance": "2026-09-09 isolated real worker journeys, Calendar and expanded UI matrix passed; six Arabic/English queue screenshots and unsaved-edit navigation, unexpected error collections empty",
+    "coverage_statements_percent": 78.89,
+    "coverage_branches_percent": 66.92,
+    "superseded_by": "content_hierarchy_and_vitest_security_checkpoint"
+  },
+  "calendar_timezone_verified_checkpoint": {
+    "date": "2026-09-09",
+    "backend_tests": 310,
+    "frontend_tests": 84,
+    "frontend_test_files": 20,
+    "coverage_statements_percent": 78.79,
+    "coverage_branches_percent": 66.92,
+    "verified": "UTC-normalized schedule input and timezone-explicit output; offset create/edit/reload and worker timing regression; Calendar browser navigation/filter/review/campaign flows, noon preservation in Africa/Cairo, six bilingual responsive screenshots",
+    "worker_journeys": "passed real sales/content/profile flows",
+    "ui_matrix": "passed with final unexpected error collections empty",
+    "scope": "fresh isolated local demo only; no historical timestamp repair or live acceptance",
+    "remaining": "Content hierarchy, Integrations/Settings and external release/provider acceptance; overall 65%"
+  },
+  "calendar_checkpoint_in_progress": {
+    "frontend_tests": 84,
+    "frontend_test_files": 20,
+    "coverage_statements_percent": 78.79,
+    "coverage_branches_percent": 66.94,
+    "verified": "month-end stepping, week-scoped agenda, content review links, overflow expansion, load retry and campaign-builder deep link; full frontend suite/build/lint/format pass",
+    "pending": "New Calendar browser verification, then Content hierarchy and Integrations/Settings; previous Studio browser evidence predates these Calendar changes"
+  },
+  "latest_verified_checkpoint": {
+    "frontend_tests": 79,
+    "frontend_test_files": 19,
+    "coverage_statements_percent": 77.99,
+    "coverage_branches_percent": 66.19,
+    "last_full_backend_tests": 309,
+    "latest_focused_backend_and_artifact_tests": 21,
+    "changes": "Independent Studio source loading/retry preserves successful sections and captions; failed content is not empty; Arabic format labels; focused review hides creation forms",
+    "worker_journey": "passed latest real sales/content/profile flows with dirty-approval, refresh and navigation assertions",
+    "ui_matrix": "expanded 20-route matrix passed, including partial brand failure/recovery preserving caption; exact injected-response accounting; final unexpected error collections empty",
+    "remaining": "Content hierarchy and Calendar consistency, Integrations/Settings, then external release/provider acceptance"
+  },
+  "latest_content_workflow_checkpoint": {
+    "backend_tests": 309,
+    "frontend_tests": 77,
+    "coverage_statements_percent": 77.58,
+    "coverage_branches_percent": 65.95,
+    "verified": "URL search/status and review links; role-aware mutations; bilingual campaign labels; unresolved-delivery guards; fresh real worker journey proves dirty approval guard, caption-preserving refresh, review navigation and demo publication",
+    "pending": "Broad UI matrix rerun after selector correction; review hierarchy, format localization, partial source failure and later productization surfaces remain"
+  },
+  "content_delivery_followup": {
+    "focused_backend_tests": 7,
+    "focused_studio_tests": 10,
+    "changes": "Prevent editing/regeneration/reapproval during publishing, retrying or unknown delivery; read-only status refresh preserves unsaved captions; queued request is not reported as published",
+    "pending": "Fresh full-candidate and browser acceptance; unresolved external deliveries still require reconciliation; wider Content UX unfinished"
+  },
+  "content_checkpoint_in_progress": {
+    "frontend_tests": 71,
+    "test_files": 19,
+    "coverage_statements_percent": 77.39,
+    "coverage_branches_percent": 66.64,
+    "coverage_scope": "Expanded to include ContentStudioPage; original status-presentation tests preserved in contentStatus.test.ts",
+    "verified": "unsaved-caption approval/publication guards, failed edit preservation, discard, regenerated server caption, published read-only; build/lint/format and full frontend suite pass",
+    "pending": "Content list/detail, delivery recovery, role/state boundaries, campaign localization and fresh isolated browser acceptance; prior browser evidence is historical for this newer candidate"
+  },
+  "catalog_inventory_checkpoint": {
+    "date": "2026-09-08",
+    "backend_tests": 306,
+    "frontend_tests": 68,
+    "coverage_statements_percent": 80.42,
+    "coverage_branches_percent": 67.71,
+    "catalog_browser": "passed real variant opening ledger, signed adjustment/reload, onboarding through review/edit/approval/demo publish, 12 bilingual responsive screenshots; zero unexpected browser/network errors",
+    "broader_browser": "independent-worker sales/content journeys, profile save/reload and 20-route UI matrix passed on 2026-09-08; final unexpected error collections empty",
+    "authority": "manual external inventory writes and conflicting key replays rejected; default variant price synchronized; negative persisted quantities readable",
+    "scope": "isolated local demo only; live providers and release acceptance remain blocked",
+    "next": "Content approval/recovery, then Integrations and Settings"
+  },
+  "progress": {
+    "overall_v1_percent": 65,
+    "clone_readiness_percent": 95,
+    "weighted_points": {
+      "foundation": 10,
+      "sales_inbox": 15,
+      "content_publishing": 15,
+      "live_providers": 0,
+      "frontend_real_api": 10,
+      "research_driven_ui": 5,
+      "qa_security_accessibility_rtl": 10,
+      "deployment_release": 0
+    }
+  },
+  "repository": {
+    "path": "G:\\Latest-Ai-Project\\commerce-ai-mvp",
+    "commit": "f6f918a79ca4dd1aebe09df129b5755945955e89",
+    "working_branch": "main",
+    "git_state": "dirty_worktree_no_remote",
+    "dirty_files": "current hardening candidate; inspect git status --short",
+    "remote": null,
+    "blocker": "The canonical local Git worktree exists, but no remote or immutable release SHA is configured and the hardening candidate is intentionally uncommitted during verification.",
+    "integrity_gate": "scripts/verify_git_integrity.py --require-release-sha now enforces a real Git worktree, clean status, configured remote, and RELEASE_SHA/GITHUB_SHA matching HEAD."
+  },
+  "frontend_architecture": {
+    "framework": "React SPA in web/",
+    "build": "Vite",
+    "language_modes": ["Arabic RTL", "English LTR"],
+    "latest_known_verification": "A fresh isolated demo run on 2026-09-10 passed the dedicated sales/content worker journeys and 20-route UI matrix with empty unexpected-error collections. Website-first desktop evidence covers Integrations overview/Store/WhatsApp states and Store Settings edit/discard without backend mutation. Historical production browser evidence is not current-candidate proof."
+  },
+  "backend_architecture": {
+    "framework": "FastAPI served through api/index.py on Vercel",
+    "persistence": "SQLAlchemy/Alembic over PostgreSQL in production",
+    "frontend_fallback": "Local code hardens unknown reserved routes to JSON 404; the current candidate is not deployed and production access remains blocked."
+  },
+  "database_provider": {
+    "type": "managed_postgresql_historical; postgresql_17_10_local_verification; sqlite_local_demo",
+    "migration_head": "20260902_0030",
+    "backup_restore_state": "local_postgresql_17_10_clean_upgrade_and_logical_restore_passed; production_provider_restore_unverified"
+  },
+  "auth_provider": {
+    "type": "first_party_email_password_sessions",
+    "notes": "MFA, recovery, revocable sessions, CSRF, RBAC, and tenant membership are implemented locally and covered by tests from prior release evidence."
+  },
+  "storage_provider": {
+    "type": "database_backed_media_with_optional_external_provider",
+    "state": "Code supports media storage; external object storage and malware scanning require provider activation."
+  },
+  "queue_and_worker_architecture": {
+    "queue": "PostgreSQL background_jobs with leases, retries, deduplication, dead-letter visibility, and diagnostic endpoints",
+    "scheduler": "Vercel cron configured daily at 0 0 * * *",
+    "standalone_worker_health": "scripts.worker exposes /health/live and /health/ready; readiness requires a fresh successful queue poll and returns HTTP 503 when stale/degraded.",
+    "production_worker_preflight": "scripts.worker refuses production startup unless ENABLE_BACKGROUND_WORKER=true, SERVERLESS_MODE/VERCEL is false, and DATABASE_URL is PostgreSQL.",
+    "blocker": "Launch-grade frequent scheduling requires Vercel Pro-or-higher cron cadence or an independent always-on worker runtime."
+  },
+  "deployment": {
+    "production_url": "https://commerce-revenue-autopilot.vercel.app",
+    "project_name": "commerce-revenue-autopilot",
+    "project_id": "prj_qd8XsbNvKkxWQvDqo5peOEUfgA2j",
+    "org_id": "team_bGNbBWwra6PVZuM1WULcCW5r",
+    "team_slug_latest_known": "malek-virtz",
+    "latest_known_deployment_id": "dpl_3QYGLjukFXvhqN2rXaar2BRKkJpx",
+    "deployment_control": "blocked_missing_vercel_project_access"
+  },
+  "provider_statuses": {
+    "email": "configured_awaiting_external_activation",
+    "openai": "configured_awaiting_external_activation",
+    "meta_social": "configured_awaiting_external_activation",
+    "meta_whatsapp": "configured_awaiting_external_activation",
+    "commerce_connectors": "configured_awaiting_external_activation",
+    "media_malware": "configured_awaiting_external_activation",
+    "stripe": "configured_awaiting_external_activation",
+    "sentry_alerting": "configured_awaiting_external_activation",
+    "postgres_backup_restore": "blocked_missing_access"
+  },
+  "completed_work": [
+    "Catalog list/detail uses query-preserving deep links, localized states, real review/activation, strict update types, provider-owned read-only fields, role-aware actions, retry/discard and precise currency. Browser checks prove price/stock edits survive reload, separate activation, original values restored, missing-detail recovery and mobile field bounds. Inbox stale-selection/suggestion/delayed-refresh races are guarded; customer links carry IDs; recent orders distinguish failure from empty and retain currency. Creation localization and variant inventory UI remain pending. Reference evidence audit considered eight candidates but scored seven usable sources; Meta login-gated and unsupported accessibility/RTL credit withdrawn; Gorgias desktop screenshot inspected.",
+    "Current-market primary-source research considered eight comparable products; seven usable sources were scored after excluding login-gated Meta evidence and selected Gorgias as the primary product grammar, with Shopify Admin limited to catalog patterns and Sprout Social limited to content approval/calendar patterns. The required research, functional mapping, and execution-state documents now exist. The first mapped Inbox slice adds a real customer-intelligence and related-orders context rail, and dedicated English desktop, Arabic desktop, and Arabic mobile browser captures pass without basic accessibility-scan findings, overflow, console, page, request, or unexpected HTTP errors.",
+    "The P0 store-settings and Content Studio brand-profile forms now have centralized, complete Arabic/English copy. A fresh isolated browser run proved that both profiles save through the real API, survive reload, and restore their original values before the sales/content journeys; two copy regressions and all frontend quality gates pass.",
+    "Primary navigation now contains exactly six P0 merchant destinations; all working secondary routes remain accessible through a route-aware More tools disclosure, mobile drawer, command palette, and direct URLs. Mobile prioritizes Home, Inbox, Content, Products, and More, while free-access mode omits the dormant Billing link. Pure-model tests and the full real browser/worker gates pass.",
+    "The P0 Home now derives actionable conversations awaiting reply, content review, uncertain publishing, channel setup, active orders, and response-time outcomes from six typed store APIs with per-source failure isolation and complete Arabic/English copy. Fixed shell notifications with no backend event source were removed; two Home regressions and the full 20-route browser matrix including a partial analytics failure pass.",
+    "Localized actionable publication-state guidance now distinguishes failed, retrying, and ambiguous outcomes; the Integrations workflow is consistently Arabic/English across Meta, commerce, WhatsApp and templates; and the isolated browser verifier covers every required non-happy-path state plus the compact mobile signup layout without mutating provider data.",
+    "A checksum-verified disposable PostgreSQL 17.10 runtime passed clean migration through all 30 revisions, upgrade from 20260728_0024 to 20260902_0030, and a matching pg_dump/pg_restore drill validating migration version, two-tenant catalog/inventory/orders/jobs, counts, totals, and tenant joins. The real run fixed demo .env leakage, Alembic verifier-schema and percent-encoded URL handling, and a Psycopg wildcard parsing failure; the commerce-release-gate skill validates.",
+    "The versioned commerce AI grounding audit now covers all eight required adversarial customer vectors plus hostile valid-schema model replies. Exact/unknown identifiers are hard constraints, ambiguous and missing-evidence questions fail closed, unsupported discount/prompt-control output retries then falls back, and the repository commerce-ai-grounding-audit skill validates.",
+    "A dedicated core-journey browser verifier now proves a citation-grounded Inbox reply and merchant-edited, approval-gated Content Studio publication through the real Vite-to-FastAPI path and independent worker; the current relocated checkout passed with three citations, exactly one added sent reply, one published item, and zero browser errors.",
+    "Durable external-operation ledger migration 20260902_0030 now commits a provider attempt before outbound message/content calls; unfinished attempts become audited delivery_unknown or publish_unknown reconciliation states and are never blindly re-sent by the worker.",
+    "Repository truth audit and source-anchored threat model added for the current candidate.",
+    "Clean checkout bootstrap, generated-secret login, API/frontend/worker health, grounded sales send, and Content Studio approval/publication were browser-verified locally on 2026-09-01.",
+    "The standalone worker now imports and asserts every durable job handler explicitly; a browser-created outbound reply and content publication both completed through the independent worker.",
+    "The broad UI verifier passed 20 authenticated routes, Arabic/English directionality, public desktop/tablet/mobile breakpoints, theme/device states, the COD order lifecycle, and loading, empty, network-unavailable, provider-disconnected, AI-unavailable, publish-failed, Home partial-source failure, permission-denied, and expired-session states with no unexpected accessibility, overflow, console, page, request, or response errors.",
+    "The repository handoff manifest is checkout-path and LF/CRLF portable, and the required seeded catalog placeholder assets are Git-visible.",
+    "P0 hardening added environment-template visibility, Settings isolation, outbound reply idempotency/audit, immutable content approval evidence, private local-media isolation, and sales-query privacy/retention regressions.",
+    "Eight repository-local skills now validate: orientation, clean bootstrap, AI grounding audit, core sales E2E, content E2E, frontend QA, release gate, and handoff sync. Meta and WhatsApp acceptance skills remain deferred until real credentialed workflows are proven.",
+    "Unknown reserved API route fallback hardened locally.",
+    "Operator alert endpoint and UI wired locally.",
+    "Release verifier rejects Python bytecode/cache artifacts and scans text evidence artifacts.",
+    "cryptography upgraded to 48.0.1 and Python dependency audit is clean.",
+    "Public/auth rate-limit docs and HTTP 429 coverage corrected for database-backed limiter.",
+    "Backup/restore drill strengthened to validate representative commerce records and tenant joins.",
+    "Production readiness warnings now include missing operator allowlist, external monitoring, and release SHA.",
+    "Operator alerts now surface production readiness gaps as stable redacted issue codes.",
+    "Standalone worker readiness health now tracks successful poll freshness and redacts raw iteration errors.",
+    "Production worker runtime preflight now fails closed unless the worker is explicitly enabled, non-serverless, and PostgreSQL-backed; operator alerts expose the missing activation as worker_runtime_missing.",
+    "Git release integrity verifier added and wired into CI plus scripts/verify_all.py.",
+    "Provider activation evidence verifier added and wired into scripts/verify_all.py to reject invalid provider statuses or secret-looking values in artifacts/agent/provider-status.json.",
+    "GitHub Actions secret-scan job now runs scripts/verify_provider_status.py so provider evidence validation happens in CI, with a workflow regression test.",
+    "Readiness artifact verifier added and wired into GitHub Actions plus scripts/verify_all.py to require mandated artifacts, current-state structure, provider evidence validation, and a non-overclaiming final verdict while blockers remain.",
+    "Post-deploy smoke verifier added for Preview/Production public HTTP checks; current production run confirms the route-hardening fix is not deployed yet.",
+    "scripts/verify_all.py now accepts --deployment-url to run the deployment smoke gate during formal release verification.",
+    "Structured owner-action handoff added at artifacts/production-readiness/owner-actions.md and validated by scripts/verify_owner_actions.py.",
+    "Deployment evidence consistency verifier added and wired into scripts/verify_all.py plus readiness artifact validation; docs/INCIDENT_RESPONSE.md now points at the latest known production deployment.",
+    "GitHub Actions now runs scripts/verify_deployment_evidence.py directly so stale deployment IDs fail in a clear CI step.",
+    "scripts/verify_all.py now matches CI and release docs by running strict mypy over app and scripts.",
+    "PRODUCTION_READINESS.md now starts with Not production ready while unresolved blockers remain, and scripts/verify_readiness_artifacts.py enforces that top-level verdict.",
+    ".gitignore now unignores required text evidence artifacts under artifacts/ so canonical Git import can add them normally; scripts/verify_readiness_artifacts.py rejects ignore rules that hide required evidence.",
+    "Environment matrix evidence verifier added and wired into CI, scripts/verify_all.py, and readiness-artifact validation; provider-status Resend sender key corrected to EMAIL_FROM and required provider environment key names are now checked against artifacts/production-readiness/environment-matrix.md.",
+    ".env.example now includes operator/CI-only Vercel control and backup-restore key names without values; scripts/verify_env_example.py validates critical runtime and provider-required key coverage while rejecting committed sensitive placeholders, and is wired into CI, scripts/verify_all.py, and readiness-artifact validation.",
+    "Owner-action handoff validation now cross-checks provider-required environment key names from artifacts/agent/provider-status.json; the backup/restore owner action explicitly includes EXPECTED_MIGRATION_HEAD alongside VERIFY_POSTGRES_URL.",
+    "Production access evidence verifier added and wired into CI, scripts/verify_all.py, and readiness-artifact validation; docs/PRODUCTION_ACCESS.md now records Vercel deployment-control key names only and is checked against current-state deployment identifiers plus local secret-file safety markers.",
+    "Operations runbook verifier added and wired into CI, scripts/verify_all.py, and readiness-artifact validation; docs/OPERATIONS.md, docs/INCIDENT_RESPONSE.md, and docs/BACKUP_AND_RESTORE.md are now checked against current deployment identifiers, smoke/log/alert/worker/restore commands, restore safety language, and secret-looking values.",
+    "Vercel connector access evidence rechecked: _list_teams can see malek-virtz, but _list_projects lists only medical-agentic-rag and direct target project/deployment lookups return 404 Not Found; the public historical URL is reachable but fails the current candidate smoke contract.",
+    "Repository handoff manifest currently records 499 deterministic SHA-256 file entries for source, tests, configs, docs, workflows, and stable evidence artifacts; scripts/verify_repository_handoff_manifest.py validates it while excluding secrets, caches, build output, mutable agent state, and the manifest itself.",
+    "WhatsApp signed webhook processing now ignores inbound message and status events whose metadata.phone_number_id does not match the configured channel phone-number ID; tests/api/test_whatsapp.py covers the cross-phone signed-event case.",
+    "Resend transactional email startup validation now rejects EMAIL_PROVIDER=resend unless EMAIL_FROM is exactly one safe sender email address with a real domain shape and no header injection characters; tests/unit/test_config.py covers invalid sender, local-domain, multi-address, and header-injection cases.",
+    "Operator-facing AI integration status now matches production fail-closed behavior: deterministic AI is not reported as configured in production, while OpenAI/Vercel AI Gateway request-scoped OIDC remains configured when AI_PROVIDER=openai and serverless gateway settings are present.",
+    "Release source hygiene now rejects .pytest_cache, .mypy_cache, and .ruff_cache in addition to Python bytecode/cache artifacts; scripts/verify_all.py disables pytest/Ruff workspace caches and redirects mypy cache outside the source tree before invoking scripts/verify_release.py.",
+    "Operator-facing media/malware integration status now reports database-backed media as configured, local media as not production-configured, Cloudinary as configured only with the full credential set, and malware_scanner as visible/fail-closed in production; media_malware provider evidence is now required and cross-checked against environment and owner-action artifacts.",
+    "Meta social and commerce connector activation evidence is now first-class: meta_social and commerce_connectors provider rows are required, represented in environment and owner-action artifacts, and documented without claiming live Facebook/Instagram or merchant-store activation.",
+    "/api/v1/integrations now reports secret-safe aggregate statuses for per-store Meta social connections and commerce connectors, using connected counts and health modes while avoiding provider tokens, ciphertext, raw account identifiers, and webhook secrets.",
+    "Integrations page provider connect/check/disconnect flows now refresh both connection rows and /api/v1/integrations aggregate status cards from the API, reducing stale operator-facing Meta social and commerce connector state.",
+    "Frontend integration wiring guard added: scripts/verify_frontend_integration_wiring.py validates Shopify OAuth callback/UI/API wiring and integration-page aggregate status refresh paths, and is wired into readiness and release orchestration without replacing the Node/npm frontend build gate.",
+    "/api/v1/integrations/meta/check now checks current-store Meta OAuth connections when present, returns secret-safe aggregate status, and avoids forbidden global merchant publisher credentials in the per-store OAuth path.",
+    "Shopify OAuth installation lifecycle implemented locally: admin start/exchange endpoints generate single-use hashed state, authenticated /shopify/oauth/callback validates signed callback state/HMAC and redirects back to the integrations UI, the integrations UI starts and exchanges Shopify OAuth, exchange codes server-side, create encrypted store-scoped provider connections, use the Shopify app secret for OAuth-installed store webhook HMAC validation, optionally request webhook registration, clear OAuth transaction credentials, and expose stable operator warning codes for unsafe production redirect configuration.",
+    "Frontend auth state now expires globally after non-public API 401 responses, clears cached access state, and redirects to a localized session-expired login notice; feature and operator route guards render localized actionable denial states instead of silently redirecting Home.",
+    "The broad UI verifier exercises every required non-happy-path state through isolated request interception while preserving strict unexpected console/page/network error checks; the 20-route matrix and all eight state checks pass.",
+    "Repository handoff selection now retains legitimate credential-named source/tests and committed data/seeds inputs while excluding runtime data and plural credential exports; focused regressions and a fresh source-only manifest checkout booted with 24 products, 6 policies, and 3 conversations.",
+    "The core browser verifier now polls exact server-authoritative conversation and content records before reloading and asserting rendered terminal state, eliminating races with seeded messages and asynchronous worker publication; the isolated sales/content run passed with three citations, one new sent reply, one published draft, and zero browser errors."
+  ],
+  "unresolved_blockers": [
+    "The local Git worktree has no configured remote or immutable release SHA, preventing push/PR/Actions evidence.",
+    "Vercel connector can see the malek-virtz team but not the commerce-revenue-autopilot project/deployment, preventing preview/production deployment and verification of local fixes.",
+    "Current production deployment fails the new smoke verifier for /openapi.json and /api/v1/conversations until the local route-hardening change is deployed.",
+    "Production backup restore into a separate non-production database is not yet owner-authorized or verified.",
+    "External provider credentials and legal/business approvals are missing for email, OpenAI, Meta social publishing/inbox, WhatsApp, commerce connectors, Stripe, Sentry/alert delivery, object storage, and malware scanning.",
+    "Launch-grade worker scheduling is blocked by Vercel Hobby cron limits unless a higher plan or external worker is approved."
+  ],
+  "tests_last_run": [
+    {
+      "timestamp": "2026-09-07T20:24:00+03:00",
+      "command": "frontend test:coverage/lint/build/format:check; pytest tests/api/test_catalog_inventory.py tests/api/test_products_content_publishing.py -q; fresh locked isolated bootstrap; verify:catalog, verify:journeys, verify:ui",
+      "result": "passed: 59 frontend tests in 16 files; 77.69% statements, 63.91% branches, 75.10% functions, 80.49% lines over expanded instrumented scope; 6 focused backend tests; real catalog review/reload/activate/restore plus Arabic/English 1440/768/390 with all mobile fields onscreen; 3 grounding citations, exactly 1 sent reply and 1 edited/approved/published content item; 20-route matrix and 9 injected non-happy states; no unexpected browser errors. Local deterministic demo only; live/deployed acceptance unverified."
+    },
+    {
+      "timestamp": "2026-09-07T08:04:55+03:00",
+      "command": "frontend Inbox/context regressions; full lint/Vitest/V8 coverage/build/Prettier; verify:journeys with independent worker and fresh isolated SQLite; expanded 20-route verify:ui with dedicated English/Arabic desktop/mobile Inbox context captures",
+      "result": "passed; 44 frontend tests, 81.26% statement, 72.72% branch, 88.59% function, and 83.91% line coverage; real customer intelligence and related orders rendered in Inbox; three grounding citations; exactly one sent reply; one edited/approved/published content item; nine non-happy-path states; zero unexpected accessibility, overflow, console, page, request, or response errors; canonical 494-file handoff manifest green"
+    },
+    {
+      "timestamp": "2026-09-07T07:26:46+03:00",
+      "command": "git remote/release/env-key presence audit; Vercel connector get_project and list_deployments for the recorded production team/project",
+      "result": "blocked as documented; no Git remote or immutable RELEASE_SHA, no local Vercel CLI/token, project lookup returned 404, deployment listing returned 403, managed PostgreSQL/provider/worker activation inputs remain absent"
+    },
+    {
+      "timestamp": "2026-09-07T07:21:49+03:00",
+      "command": "profile-copy regression; full frontend lint/Vitest/V8 coverage/build/Prettier; verify:journeys with independent worker and fresh isolated SQLite; 20-route verify:ui; all 12 readiness/release verifiers in a relocated source-only checkout",
+      "result": "passed; 41 frontend tests, 82.37% statement, 72.99% branch, 90.00% function, and 84.72% line coverage; store and brand profiles saved and survived reload before original-value restoration; three grounding citations; exactly one sent reply; one edited/approved/published content item; nine non-happy-path states; zero unexpected accessibility, overflow, console, page, request, or response errors; relocated 489-file release handoff green"
+    },
+    {
+      "timestamp": "2026-09-06T10:11:00+03:00",
+      "command": "git remote/release/env-key presence audit; Vercel connector get_project and list_deployments for the recorded production team/project",
+      "result": "blocked as documented; no Git remote or immutable RELEASE_SHA, no local Vercel CLI/token, project lookup returned 404, deployment listing returned 403, managed PostgreSQL/provider/worker activation inputs remain absent"
+    },
+    {
+      "timestamp": "2026-09-06T10:09:00+03:00",
+      "command": "frontend navigation model tests; full Vitest/V8 coverage; lint/logical CSS; TypeScript production build; Prettier; verify:journeys with independent worker; expanded 20-route verify:ui against a fresh isolated demo database; all 12 readiness/release verifiers in a relocated source-only checkout",
+      "result": "passed; 39 frontend tests, 82.25% statement and 72.99% branch coverage; exact six-link desktop P0 navigation; four P0 mobile links plus More; all secondary routes preserved; three grounded citations; exactly one sent reply; one edited/approved/published content item; nine non-happy-path states; zero unexpected accessibility, overflow, console, page, request, or response errors; relocated 487-file release handoff green"
+    },
+    {
+      "timestamp": "2026-09-06T09:54:00+03:00",
+      "command": "frontend focused Home tests; full Vitest/V8 coverage; lint/logical CSS; TypeScript production build; Prettier; Python Ruff/format/strict mypy/complete pytest; 20-route verify:ui against a fresh isolated demo database; all 12 readiness/release verifiers in a relocated source-only checkout",
+      "result": "passed; complete backend suite, 186 formatted Python files, 169 strictly typed source files, 37 frontend tests, 82.02% statement and 72.99% branch coverage, production build, Arabic/English Home backed by six real APIs, nine non-happy-path states including Home partial-source failure, zero unexpected accessibility/overflow/console/page/network/HTTP errors, and relocated 485-file release handoff green"
+    },
+    {
+      "timestamp": "2026-09-06T07:27:00+03:00",
+      "command": "frontend lint/Vitest/V8 coverage/build/Prettier; Ruff check/format; strict mypy; complete backend pytest; isolated verify:journeys and verify:ui; all 12 readiness/release verifiers in a relocated source-only checkout",
+      "result": "passed; complete backend suite, 186 formatted Python files, 169 strictly typed source files, 35 frontend tests, 78.75% statement and 72.83% branch coverage, production build, exact sales/content terminal-state checks, 20-route UI matrix plus eight required non-happy-path states, and relocated 484-file release handoff green"
+    },
+    {
+      "timestamp": "2026-09-06T02:29:00+03:00",
+      "command": "full backend pytest without cache; Ruff check/format; strict mypy; frontend lint/Vitest/V8 coverage/build/Prettier; isolated manifest-only bootstrap plus verify:journeys and verify:ui; all 12 release/readiness verifiers in a relocated source-only checkout",
+      "result": "passed; complete backend suite, 186 formatted Python files, 169 strictly typed source files, 29 frontend tests, 81.65% statement and 76.27% branch coverage, production build, 20-route UI matrix plus permission-denied and expired-session states, exact sales/content terminal-state checks, and relocated 480-file release handoff green"
+    },
+    {
+      "timestamp": "2026-09-05T20:58:18+03:00",
+      "command": "full backend pytest without cache; Ruff check/format; strict mypy; frontend lint/Vitest/build/Prettier; all eight repository skill validations; all 12 release/readiness verifiers in a relocated source-only checkout",
+      "result": "passed; complete backend suite, 187 formatted Python files, 169 strictly typed source files, 15 frontend tests, production build, eight valid repository skills, and relocated 471-file release handoff green"
+    },
+    {
+      "timestamp": "2026-09-05T20:50:37+03:00",
+      "command": "checksum-verified PostgreSQL 17.10 localhost-only disposable cluster; scripts.verify_all.migration_gate; scripts/verify_backup_restore.py with matching pg_dump/pg_restore; focused release/database regressions; skill validation",
+      "result": "passed after red-to-green fixes; clean migration through 30 revisions, 20260728_0024 to 20260902_0030 upgrade, representative logical dump/drop/restore validation, 15 focused unit tests, and commerce-release-gate skill all green"
+    },
+    {
+      "timestamp": "2026-09-02T06:15:59+03:00",
+      "command": "full backend pytest without cache/bytecode; Ruff check/format; strict mypy; frontend lint/Vitest/build/Prettier; skill-creator validation; all 12 release/readiness verifiers in a relocated source-only checkout",
+      "result": "passed; all eight required adversarial customer vectors, hostile structured-output and missing-policy fallback cases, complete backend suite, 169 typed source files, 186 formatted Python files, 15 frontend tests, production build, valid commerce-ai-grounding-audit skill, and relocated 462-file release handoff green"
+    },
+    {
+      "timestamp": "2026-09-02T05:50:25+03:00",
+      "command": "relocated Git-visible candidate: uv 0.12.7 sync --all-groups --locked; npm ci; verify_env_example; fresh bootstrap/init; start independent API, Vite and worker; npm run verify:journeys; npm run verify:ui",
+      "result": "passed; Python 3.13.14 and 77 locked packages, 220 frontend packages with zero audit vulnerabilities, 24 products/6 policies/3 conversations, all health endpoints ready, sales sent with 3 citations and exactly 1 added outbound, content merchant-edited/approved/published, 20 routes and 12 screenshots with zero console/page/request/response errors; all 12 release/readiness verifiers passed in a relocated 460-file source handoff"
+    },
+    {
+      "timestamp": "2026-09-02T01:12:00+03:00",
+      "command": "full backend pytest; Ruff and format; strict mypy; frontend lint, Vitest, build and Prettier; all 12 release/readiness verifiers in a dependency-free relocated source checkout",
+      "result": "passed; backend suite, 169 typed source files, 185 formatted Python files, 15 frontend tests, production build, source-only release hygiene, 459-file portable manifest, readiness, provider/access evidence, environment contract, frontend wiring, owner actions, and operations evidence all green"
+    },
+    {
+      "timestamp": "2026-09-02T00:38:58+03:00",
+      "command": "Vercel list_teams/list_projects/get_project/get_deployment; curl public root and health; python scripts/verify_deployment_smoke.py https://commerce-revenue-autopilot.vercel.app",
+      "result": "team visible; target project/deployment unavailable via connector (404); public health reachable and dependencies healthy; candidate smoke failed because /api/v1/conversations and /openapi.json still exhibit the older deployment behavior"
+    },
+    {
+      "timestamp": "2026-09-01T20:20:30+03:00",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -m pytest -p no:cacheprovider -q; ruff check --no-cache .; ruff format --check --no-cache .; mypy --strict app scripts; npm lint; Vitest; V8 coverage; Vite build; Prettier check",
+      "result": "passed; frontend 13 tests, 90.90% statements, 60.29% branches, 97.50% functions, 94.28% lines"
+    },
+    {
+      "timestamp": "2026-09-01T20:18:44+03:00",
+      "command": "fresh checkout: uv sync --all-groups --locked; npm --prefix web ci; verify_env_example; bootstrap_env; init_local; start API, Vite, and scripts.worker; browser Inbox suggestion/send and Content Studio draft/approve/publish",
+      "result": "passed; 24 products, 6 policies, 3 conversations; API/worker ready; outbound message sent with exactly one queued and one sent audit; content published with approval actor/time/hash and exactly one approved and one published audit"
+    },
+    {
+      "timestamp": "2026-09-01T20:18:44+03:00",
+      "command": "UI_DEMO_PASSWORD=<in-memory one-time value> node web/scripts/verify-ui.mjs",
+      "result": "passed 20 routes, Arabic/English, desktop/tablet/mobile, light/dark, COD lifecycle; zero accessibility, overflow, console, page, failed-request, or error-response findings"
+    },
+    {
+      "timestamp": "2026-09-01T20:18:44+03:00",
+      "command": "verify_release.py; verify_repository_handoff_manifest.py; verify_readiness_artifacts.py in relocated source-only candidate checkout",
+      "result": "passed; manifest root is repository-relative with 455 canonical file fingerprints"
+    },
+    {
+      "timestamp": "2026-09-01T06:25:02+03:00",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -m pytest -p no:cacheprovider -q; python -m ruff check --no-cache .; python -m ruff format --check --no-cache .; python -m mypy --strict app",
+      "result": "passed_full_backend_suite_and_quality_gates"
+    },
+    {
+      "timestamp": "2026-09-01T06:25:02+03:00",
+      "command": "npm run lint; npm run test -- --run; npm run test:coverage -- --run; npm run build; npm run format:check",
+      "result": "passed_13_tests; coverage statements 90.90%, branches 60.29%, functions 97.50%, lines 94.28%; production build passed"
+    },
+    {
+      "timestamp": "2026-09-01T06:25:02+03:00",
+      "command": "verify_deployment_evidence.py; verify_provider_status.py; verify_environment_matrix.py; verify_env_example.py; verify_frontend_integration_wiring.py; verify_owner_actions.py; verify_production_access.py; verify_vercel_access_evidence.py; verify_operations_runbook.py; verify_repository_handoff_manifest.py; verify_readiness_artifacts.py",
+      "result": "passed_all_recorded_readiness_consistency_gates; live provider and deployment acceptance remain explicitly unverified"
+    },
+    {
+      "timestamp": "2026-08-01T12:46:31+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json; python -m json.tool artifacts/agent/provider-status.json; uv run python scripts/verify_repository_handoff_manifest.py --write; uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_frontend_integration_wiring.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T12:44:55+03:00",
+      "command": "uv run python scripts/verify_frontend_integration_wiring.py; uv run python scripts/verify_repository_handoff_manifest.py --write; uv run pytest -p no:cacheprovider tests/unit/test_frontend_integration_wiring_verifier.py tests/unit/test_readiness_artifacts_verifier.py -q; uv run ruff check --no-cache scripts/verify_frontend_integration_wiring.py scripts/verify_readiness_artifacts.py scripts/verify_all.py tests/unit/test_frontend_integration_wiring_verifier.py tests/unit/test_readiness_artifacts_verifier.py; uv run mypy --strict --cache-dir G:\\Latest-Ai-Project\\.tools\\mypy-cache-commerce-ai scripts/verify_frontend_integration_wiring.py scripts/verify_readiness_artifacts.py scripts/verify_all.py; uv run ruff format --check scripts/verify_frontend_integration_wiring.py scripts/verify_readiness_artifacts.py scripts/verify_all.py tests/unit/test_frontend_integration_wiring_verifier.py tests/unit/test_readiness_artifacts_verifier.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T12:33:20+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json; python -m json.tool artifacts/agent/provider-status.json; uv run python scripts/verify_repository_handoff_manifest.py --write; uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T12:32:15+03:00",
+      "command": "Select-String over web/src/features/integrations/IntegrationsPage.tsx for loadConnections/checkMeta refresh paths; rg for stale checkMeta/checkProviderConnection response variables; node --version; npm --version",
+      "result": "text-level UI sanity passed; frontend build blocked because node and npm are not installed in this runner"
+    },
+    {
+      "timestamp": "2026-08-01T12:29:30+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json; python -m json.tool artifacts/agent/provider-status.json; uv run python scripts/verify_repository_handoff_manifest.py --write; uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T12:28:09+03:00",
+      "command": "uv run pytest -p no:cacheprovider tests/api/test_commerce_connectors.py tests/unit/test_config.py tests/unit/test_commerce_security.py -q; uv run ruff check --no-cache app/services/commerce_connectors.py app/api/routes/commerce.py app/main.py tests/api/test_commerce_connectors.py; uv run mypy --strict --cache-dir G:\\Latest-Ai-Project\\.tools\\mypy-cache-commerce-ai app/services/commerce_connectors.py app/api/routes/commerce.py app/main.py; uv run ruff format --check app/services/commerce_connectors.py app/api/routes/commerce.py app/main.py tests/api/test_commerce_connectors.py; node --version; npm --version",
+      "result": "backend passed; frontend build blocked because node and npm are not installed in this runner"
+    },
+    {
+      "timestamp": "2026-08-01T12:21:13+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json; python -m json.tool artifacts/agent/provider-status.json; uv run python scripts/verify_repository_handoff_manifest.py --write; uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T12:19:42+03:00",
+      "command": "uv run pytest -p no:cacheprovider tests/unit/test_integration_status.py tests/api/test_provider_connections.py tests/api/test_products_content_publishing.py::test_integrations_are_secret_safe -q; uv run ruff check --no-cache app/api/routes/integrations.py tests/api/test_provider_connections.py tests/api/test_products_content_publishing.py; uv run mypy --strict --cache-dir G:\\Latest-Ai-Project\\.tools\\mypy-cache-commerce-ai app/api/routes/integrations.py; uv run ruff format --check app/api/routes/integrations.py tests/api/test_provider_connections.py tests/api/test_products_content_publishing.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T12:14:01+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json; python -m json.tool artifacts/agent/provider-status.json; uv run python scripts/verify_repository_handoff_manifest.py --write; uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T12:13:20+03:00",
+      "command": "uv run pytest -p no:cacheprovider tests/api/test_commerce_connectors.py tests/unit/test_config.py tests/unit/test_commerce_security.py -q; uv run ruff check --no-cache app/services/commerce_connectors.py tests/api/test_commerce_connectors.py; uv run mypy --strict --cache-dir G:\\Latest-Ai-Project\\.tools\\mypy-cache-commerce-ai app/services/commerce_connectors.py; uv run ruff format --check app/services/commerce_connectors.py tests/api/test_commerce_connectors.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T12:11:32+03:00",
+      "command": "uv run pytest -p no:cacheprovider tests/api/test_commerce_connectors.py::test_shopify_oauth_install_lifecycle_is_signed_secret_safe_and_single_use -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T12:06:14+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json; python -m json.tool artifacts/agent/provider-status.json; uv run python scripts/verify_repository_handoff_manifest.py --write; uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T12:00:51+03:00",
+      "command": "uv run pytest -p no:cacheprovider tests/api/test_commerce_connectors.py tests/unit/test_config.py tests/unit/test_commerce_security.py tests/api/test_operations.py -q; uv run ruff check --no-cache app/config.py app/domain/models.py app/services/commerce_connectors.py app/api/routes/commerce.py app/api/routes/operations.py tests/api/test_commerce_connectors.py tests/unit/test_config.py tests/unit/test_commerce_security.py tests/api/test_operations.py; uv run mypy --strict --cache-dir G:\\Latest-Ai-Project\\.tools\\mypy-cache-commerce-ai app/config.py app/domain/models.py app/services/commerce_connectors.py app/api/routes/commerce.py app/api/routes/operations.py; uv run ruff format --check app/config.py app/domain/models.py app/services/commerce_connectors.py app/api/routes/commerce.py app/api/routes/operations.py tests/api/test_commerce_connectors.py tests/unit/test_config.py tests/unit/test_commerce_security.py tests/api/test_operations.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:52:42+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:51:36+03:00",
+      "command": "uv run pytest -p no:cacheprovider tests/unit/test_integration_status.py tests/api/test_provider_connections.py tests/api/test_commerce_connectors.py tests/api/test_products_content_publishing.py::test_integrations_are_secret_safe -q; uv run ruff check --no-cache app/api/routes/integrations.py tests/unit/test_integration_status.py tests/api/test_provider_connections.py tests/api/test_commerce_connectors.py; uv run mypy --strict --cache-dir G:\\Latest-Ai-Project\\.tools\\mypy-cache-commerce-ai app/api/routes/integrations.py; uv run ruff format --check app/api/routes/integrations.py tests/unit/test_integration_status.py tests/api/test_provider_connections.py tests/api/test_commerce_connectors.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:40:28+03:00",
+      "command": "uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:45:47+03:00",
+      "command": "uv run pytest -p no:cacheprovider tests/unit/test_provider_status_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_owner_actions_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/api/test_commerce_connectors.py tests/api/test_provider_connections.py -q; uv run ruff check --no-cache scripts/verify_provider_status.py scripts/verify_owner_actions.py tests/unit/test_provider_status_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_owner_actions_verifier.py tests/unit/test_readiness_artifacts_verifier.py; uv run mypy --strict --cache-dir G:\\Latest-Ai-Project\\.tools\\mypy-cache-commerce-ai scripts/verify_provider_status.py scripts/verify_owner_actions.py; uv run ruff format --check scripts/verify_provider_status.py scripts/verify_owner_actions.py tests/unit/test_provider_status_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_owner_actions_verifier.py tests/unit/test_readiness_artifacts_verifier.py; uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:00:40+03:00",
+      "command": "python -m py_compile scripts/verify_backup_restore.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:00:40+03:00",
+      "command": "uv run ruff check scripts/verify_backup_restore.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:00:40+03:00",
+      "command": "uv run mypy --strict scripts/verify_backup_restore.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:00:40+03:00",
+      "command": "uv run ruff check app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:00:40+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:00:40+03:00",
+      "command": "uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:00:40+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:00:40+03:00",
+      "command": "uv run pytest tests/unit/test_config.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:00:40+03:00",
+      "command": "uv run ruff check app/config.py tests/unit/test_config.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:00:40+03:00",
+      "command": "uv run mypy --strict app/config.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:00:40+03:00",
+      "command": "uv run pytest tests/unit/test_config.py tests/api/test_auth_and_system.py tests/api/test_operations.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:04:49+03:00",
+      "command": "uv run pytest tests/api/test_operations.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:04:49+03:00",
+      "command": "uv run ruff check app/api/routes/operations.py tests/api/test_operations.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:04:49+03:00",
+      "command": "uv run mypy --strict app/api/routes/operations.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:04:49+03:00",
+      "command": "uv run pytest tests/unit/test_config.py tests/api/test_auth_and_system.py tests/api/test_operations.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:04:49+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:04:49+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:04:49+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:04:49+03:00",
+      "command": "uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:09:15+03:00",
+      "command": "uv run pytest tests/integration/test_job_queue.py tests/unit/test_worker_script.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:09:15+03:00",
+      "command": "uv run ruff check app/services/job_queue.py scripts/worker.py tests/integration/test_job_queue.py tests/unit/test_worker_script.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:09:15+03:00",
+      "command": "uv run mypy --strict app/services/job_queue.py scripts/worker.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:09:15+03:00",
+      "command": "uv run pytest tests/integration/test_job_queue.py tests/unit/test_worker_script.py tests/api/test_operations.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:09:15+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:09:15+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:09:15+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:09:15+03:00",
+      "command": "uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:14:00+03:00",
+      "command": "uv run pytest tests/unit/test_git_integrity.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:14:00+03:00",
+      "command": "uv run ruff check scripts/verify_git_integrity.py scripts/verify_all.py tests/unit/test_git_integrity.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:14:00+03:00",
+      "command": "uv run mypy --strict scripts/verify_git_integrity.py scripts/verify_all.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:14:00+03:00",
+      "command": "python yaml.safe_load(.github/workflows/ci.yml)",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:14:00+03:00",
+      "command": "uv run python scripts/verify_git_integrity.py --require-release-sha",
+      "result": "failed_expected_not_a_git_worktree"
+    },
+    {
+      "timestamp": "2026-08-01T09:19:15+03:00",
+      "command": "uv run pytest tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:19:15+03:00",
+      "command": "uv run ruff check scripts/verify_provider_status.py scripts/verify_all.py tests/unit/test_provider_status_verifier.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:19:15+03:00",
+      "command": "uv run mypy --strict scripts/verify_provider_status.py scripts/verify_all.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:19:15+03:00",
+      "command": "uv run python scripts/verify_provider_status.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:19:15+03:00",
+      "command": "uv run ruff format --check scripts/verify_provider_status.py tests/unit/test_provider_status_verifier.py scripts/verify_all.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:20:45+03:00",
+      "command": "uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:23:02+03:00",
+      "command": "uv run pytest tests/unit/test_worker_script.py tests/unit/test_config.py tests/api/test_operations.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:23:02+03:00",
+      "command": "uv run ruff check scripts/worker.py app/config.py app/api/routes/operations.py tests/unit/test_worker_script.py tests/unit/test_config.py tests/api/test_operations.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:23:02+03:00",
+      "command": "uv run mypy --strict scripts/worker.py app/config.py app/api/routes/operations.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:24:30+03:00",
+      "command": "uv run pytest tests/unit/test_worker_script.py tests/unit/test_config.py tests/api/test_operations.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:24:30+03:00",
+      "command": "uv run ruff check scripts/worker.py app/config.py app/api/routes/operations.py scripts/verify_provider_status.py scripts/verify_all.py tests/unit/test_worker_script.py tests/unit/test_config.py tests/api/test_operations.py tests/unit/test_provider_status_verifier.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:24:30+03:00",
+      "command": "uv run mypy --strict scripts/worker.py app/config.py app/api/routes/operations.py scripts/verify_provider_status.py scripts/verify_all.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:24:30+03:00",
+      "command": "uv run ruff format --check scripts/worker.py scripts/verify_provider_status.py tests/unit/test_worker_script.py tests/unit/test_provider_status_verifier.py scripts/verify_all.py app/config.py app/api/routes/operations.py tests/unit/test_config.py tests/api/test_operations.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:24:30+03:00",
+      "command": "uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:24:30+03:00",
+      "command": "uv run python scripts/verify_provider_status.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:24:30+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T09:24:30+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T09:25:14+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:25:14+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:25:14+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:27:30+03:00",
+      "command": "uv run pytest tests/unit/test_ci_workflow.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:27:30+03:00",
+      "command": "uv run ruff check tests/unit/test_ci_workflow.py tests/unit/test_provider_status_verifier.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:27:30+03:00",
+      "command": "python yaml.safe_load(.github/workflows/ci.yml)",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:27:30+03:00",
+      "command": "uv run python scripts/verify_provider_status.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:28:16+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:28:16+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:28:16+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T09:31:24+03:00",
+      "command": "uv run pytest tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_ci_workflow.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:31:24+03:00",
+      "command": "uv run ruff check scripts/verify_readiness_artifacts.py scripts/verify_all.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_ci_workflow.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:31:24+03:00",
+      "command": "uv run mypy --strict scripts/verify_readiness_artifacts.py scripts/verify_all.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:31:24+03:00",
+      "command": "uv run python scripts/verify_readiness_artifacts.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:32:52+03:00",
+      "command": "uv run pytest tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_ci_workflow.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:32:52+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:32:52+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:32:52+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:32:52+03:00",
+      "command": "python yaml.safe_load(.github/workflows/ci.yml)",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:32:52+03:00",
+      "command": "uv run python scripts/verify_provider_status.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:32:52+03:00",
+      "command": "uv run python scripts/verify_readiness_artifacts.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:32:52+03:00",
+      "command": "uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:32:52+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T09:32:52+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T09:36:42+03:00",
+      "command": "uv run pytest tests/unit/test_deployment_smoke.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:36:42+03:00",
+      "command": "uv run ruff check scripts/verify_deployment_smoke.py tests/unit/test_deployment_smoke.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:36:42+03:00",
+      "command": "uv run mypy --strict scripts/verify_deployment_smoke.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:36:42+03:00",
+      "command": "uv run ruff format --check scripts/verify_deployment_smoke.py tests/unit/test_deployment_smoke.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:36:42+03:00",
+      "command": "uv run python scripts/verify_deployment_smoke.py https://commerce-revenue-autopilot.vercel.app",
+      "result": "failed_expected_current_production_missing_local_route_hardening"
+    },
+    {
+      "timestamp": "2026-08-01T09:37:46+03:00",
+      "command": "uv run pytest tests/unit/test_deployment_smoke.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_ci_workflow.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:37:46+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:37:46+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:37:46+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:37:46+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:37:46+03:00",
+      "command": "uv run python scripts/verify_provider_status.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:37:46+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T09:37:46+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T09:40:59+03:00",
+      "command": "uv run pytest tests/unit/test_verify_all.py tests/unit/test_deployment_smoke.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:40:59+03:00",
+      "command": "uv run ruff check scripts/verify_all.py scripts/verify_deployment_smoke.py tests/unit/test_verify_all.py tests/unit/test_deployment_smoke.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:40:59+03:00",
+      "command": "uv run mypy --strict scripts/verify_all.py scripts/verify_deployment_smoke.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:40:59+03:00",
+      "command": "uv run pytest tests/unit/test_verify_all.py tests/unit/test_deployment_smoke.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_ci_workflow.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:40:59+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:40:59+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:40:59+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:40:59+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:40:59+03:00",
+      "command": "uv run python scripts/verify_provider_status.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:40:59+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T09:40:59+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T09:49:12+03:00",
+      "command": "uv run pytest tests/unit/test_deployment_evidence_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:49:12+03:00",
+      "command": "uv run ruff check scripts/verify_deployment_evidence.py scripts/verify_readiness_artifacts.py scripts/verify_all.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:49:12+03:00",
+      "command": "uv run mypy --strict scripts/verify_deployment_evidence.py scripts/verify_readiness_artifacts.py scripts/verify_all.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:49:12+03:00",
+      "command": "uv run ruff format --check scripts/verify_deployment_evidence.py scripts/verify_readiness_artifacts.py scripts/verify_all.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:51:41+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:51:41+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:51:41+03:00",
+      "command": "uv run pytest tests/unit/test_deployment_evidence_verifier.py tests/unit/test_owner_actions_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_deployment_smoke.py tests/unit/test_ci_workflow.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:51:41+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:51:41+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:51:41+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:51:41+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T09:51:41+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv and node_modules",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T09:55:50+03:00",
+      "command": "Codex Security config preflight for security_scan profile",
+      "result": "passed_ready_warn_limited_worker_slots"
+    },
+    {
+      "timestamp": "2026-08-01T09:55:50+03:00",
+      "command": "uv run pytest tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:55:50+03:00",
+      "command": "uv run ruff check scripts/verify_all.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:55:50+03:00",
+      "command": "uv run mypy --strict scripts/verify_all.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:55:50+03:00",
+      "command": "python yaml.safe_load(.github/workflows/ci.yml)",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:55:50+03:00",
+      "command": "uv run ruff format --check scripts/verify_all.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:57:07+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json; python yaml.safe_load(.github/workflows/ci.yml)",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:57:07+03:00",
+      "command": "uv run pytest tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_owner_actions_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:57:07+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:57:07+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:57:07+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:57:07+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T09:57:07+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T09:57:07+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv and node_modules",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T10:01:56+03:00",
+      "command": "uv run pytest tests/unit/test_readiness_artifacts_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:01:56+03:00",
+      "command": "uv run ruff check scripts/verify_readiness_artifacts.py tests/unit/test_readiness_artifacts_verifier.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:01:56+03:00",
+      "command": "uv run mypy --strict scripts/verify_readiness_artifacts.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:01:56+03:00",
+      "command": "uv run ruff format --check scripts/verify_readiness_artifacts.py tests/unit/test_readiness_artifacts_verifier.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:03:02+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:03:02+03:00",
+      "command": "uv run pytest tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_provider_status_verifier.py tests/unit/test_owner_actions_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:03:02+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:03:02+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:03:02+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:03:02+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:03:02+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T10:03:02+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv and node_modules",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T10:06:00+03:00",
+      "command": "uv run pytest tests/unit/test_readiness_artifacts_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:06:00+03:00",
+      "command": "uv run ruff check scripts/verify_readiness_artifacts.py tests/unit/test_readiness_artifacts_verifier.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:06:00+03:00",
+      "command": "uv run mypy --strict scripts/verify_readiness_artifacts.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:06:00+03:00",
+      "command": "uv run ruff format --check scripts/verify_readiness_artifacts.py tests/unit/test_readiness_artifacts_verifier.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:07:20+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:07:20+03:00",
+      "command": "uv run pytest tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_provider_status_verifier.py tests/unit/test_owner_actions_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:07:20+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:07:20+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:07:20+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:07:20+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:07:20+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T10:07:20+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv and node_modules",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T10:15:11+03:00",
+      "command": "uv run pytest tests/unit/test_environment_matrix_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:15:11+03:00",
+      "command": "uv run ruff check scripts/verify_environment_matrix.py scripts/verify_readiness_artifacts.py scripts/verify_all.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:15:11+03:00",
+      "command": "uv run mypy --strict scripts/verify_environment_matrix.py scripts/verify_readiness_artifacts.py scripts/verify_all.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:15:11+03:00",
+      "command": "uv run ruff format --check scripts/verify_environment_matrix.py scripts/verify_readiness_artifacts.py scripts/verify_all.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:15:11+03:00",
+      "command": "uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:17:36+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json; python yaml.safe_load(.github/workflows/ci.yml)",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:17:36+03:00",
+      "command": "uv run pytest tests/unit/test_environment_matrix_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_provider_status_verifier.py tests/unit/test_owner_actions_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:17:36+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:17:36+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:17:36+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:17:36+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:17:36+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T10:23:42+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json; python yaml.safe_load(.github/workflows/ci.yml)",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:23:42+03:00",
+      "command": "uv run pytest tests/unit/test_env_example_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_provider_status_verifier.py tests/unit/test_owner_actions_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:23:42+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:23:42+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:23:42+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:23:42+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:23:42+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv and node_modules",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T10:23:42+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T10:29:24+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json; python yaml.safe_load(.github/workflows/ci.yml)",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:29:24+03:00",
+      "command": "uv run pytest tests/unit/test_owner_actions_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:29:24+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:29:24+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:29:24+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:29:24+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:29:24+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv and node_modules",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T10:29:24+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T10:35:03+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json; python yaml.safe_load(.github/workflows/ci.yml)",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:35:03+03:00",
+      "command": "uv run pytest tests/unit/test_production_access_verifier.py tests/unit/test_owner_actions_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:35:03+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:35:03+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:35:03+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:35:03+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:35:03+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv and node_modules",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T10:35:03+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T10:41:25+03:00",
+      "command": "uv run pytest tests/unit/test_operations_runbook_verifier.py tests/unit/test_production_access_verifier.py tests/unit/test_owner_actions_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:41:25+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:41:25+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:41:25+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:41:25+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:43:01+03:00",
+      "command": "uv run ruff check app tests scripts; uv run mypy --strict app scripts; uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:43:01+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv and node_modules",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T10:43:01+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T10:50:23+03:00",
+      "command": "uv run pytest tests/unit/test_vercel_access_evidence_verifier.py tests/unit/test_operations_runbook_verifier.py tests/unit/test_production_access_verifier.py tests/unit/test_owner_actions_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:50:23+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:50:23+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:50:23+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:50:23+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:51:18+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json; python yaml.safe_load(.github/workflows/ci.yml); uv run python scripts/verify_provider_status.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_readiness_artifacts.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:51:18+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv and node_modules",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T10:51:18+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T10:57:24+03:00",
+      "command": "uv run pytest tests/unit/test_repository_handoff_manifest.py tests/unit/test_vercel_access_evidence_verifier.py tests/unit/test_operations_runbook_verifier.py tests/unit/test_production_access_verifier.py tests/unit/test_owner_actions_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:57:24+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:57:24+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:57:24+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:57:24+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:58:12+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json; python yaml.safe_load(.github/workflows/ci.yml); uv run python scripts/verify_provider_status.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T10:58:12+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv and node_modules",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T10:58:12+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T11:09:05+03:00",
+      "command": "uv run pytest tests/api/test_whatsapp.py tests/unit/test_repository_handoff_manifest.py tests/unit/test_vercel_access_evidence_verifier.py tests/unit/test_operations_runbook_verifier.py tests/unit/test_production_access_verifier.py tests/unit/test_owner_actions_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_verify_all.py tests/unit/test_ci_workflow.py tests/unit/test_deployment_evidence_verifier.py tests/unit/test_provider_status_verifier.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:09:05+03:00",
+      "command": "uv run ruff check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:09:05+03:00",
+      "command": "uv run mypy --strict app scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:09:05+03:00",
+      "command": "uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:09:05+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:09:38+03:00",
+      "command": "python -m json.tool artifacts/agent/current-state.json and artifacts/agent/provider-status.json; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:09:38+03:00",
+      "command": "Get-ChildItem -Recurse -Directory -Filter __pycache__ excluding .venv and node_modules",
+      "result": "passed_no_directories_found"
+    },
+    {
+      "timestamp": "2026-08-01T11:09:38+03:00",
+      "command": "git status --short --branch",
+      "result": "failed_expected_not_a_git_repository"
+    },
+    {
+      "timestamp": "2026-08-01T11:13:31+03:00",
+      "command": "uv run pytest tests/unit/test_config.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:14:58+03:00",
+      "command": "uv run pytest tests/unit/test_config.py -q; uv run ruff check app tests scripts; uv run mypy --strict app scripts; uv run ruff format --check app tests scripts",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:15:34+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:18:09+03:00",
+      "command": "uv run pytest tests/unit/test_integration_status.py tests/unit/test_ai_provider_runtime.py tests/unit/test_config.py -q",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:19:04+03:00",
+      "command": "uv run ruff check app tests scripts; uv run mypy --strict app scripts; uv run ruff format --check app tests scripts; uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:25:01+03:00",
+      "command": "uv run pytest -p no:cacheprovider tests/unit/test_release_verifier.py tests/unit/test_verify_all.py -q; uv run ruff check --no-cache scripts/verify_release.py scripts/verify_all.py tests/unit/test_release_verifier.py tests/unit/test_verify_all.py; uv run mypy --strict --cache-dir G:\\Latest-Ai-Project\\.tools\\mypy-cache-commerce-ai scripts/verify_release.py scripts/verify_all.py tests/unit/test_release_verifier.py tests/unit/test_verify_all.py; uv run ruff format --check scripts/verify_release.py scripts/verify_all.py tests/unit/test_release_verifier.py tests/unit/test_verify_all.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:27:19+03:00",
+      "command": "uv run pytest -p no:cacheprovider tests/unit/test_release_verifier.py tests/unit/test_verify_all.py tests/unit/test_readiness_artifacts_verifier.py tests/unit/test_repository_handoff_manifest.py -q; uv run ruff check --no-cache app tests scripts; uv run mypy --strict --cache-dir G:\\Latest-Ai-Project\\.tools\\mypy-cache-commerce-ai app scripts; uv run ruff format --check app tests scripts; uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:31:28+03:00",
+      "command": "uv run pytest -p no:cacheprovider tests/unit/test_integration_status.py tests/api/test_products_content_publishing.py::test_integrations_are_secret_safe -q; uv run ruff check --no-cache app/api/routes/integrations.py tests/unit/test_integration_status.py; uv run mypy --strict --cache-dir G:\\Latest-Ai-Project\\.tools\\mypy-cache-commerce-ai app/api/routes/integrations.py; uv run ruff format --check app/api/routes/integrations.py tests/unit/test_integration_status.py",
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-08-01T11:35:44+03:00",
+      "command": "uv run pytest -p no:cacheprovider tests/unit/test_provider_status_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_owner_actions_verifier.py tests/unit/test_integration_status.py -q; uv run ruff check --no-cache app/api/routes/integrations.py scripts/verify_provider_status.py scripts/verify_owner_actions.py tests/unit/test_integration_status.py tests/unit/test_provider_status_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_owner_actions_verifier.py; uv run mypy --strict --cache-dir G:\\Latest-Ai-Project\\.tools\\mypy-cache-commerce-ai app/api/routes/integrations.py scripts/verify_provider_status.py scripts/verify_owner_actions.py; uv run ruff format --check app/api/routes/integrations.py scripts/verify_provider_status.py scripts/verify_owner_actions.py tests/unit/test_integration_status.py tests/unit/test_provider_status_verifier.py tests/unit/test_environment_matrix_verifier.py tests/unit/test_env_example_verifier.py tests/unit/test_owner_actions_verifier.py; uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed"
+    }
+  ],
+  "next_executable_tasks": [
+    "Repeat the clean/upgrade migration and pg_dump/pg_restore gates against the immutable release using an approved managed PostgreSQL verification URL.",
+    "Restore a real provider backup into a separate non-production database and validate core production records; local representative restore evidence already passes.",
+    "Grant Vercel access to the existing commerce-revenue-autopilot project, deploy a preview containing local fixes, run preview acceptance, then promote only after gates pass.",
+    "Configure the canonical Git remote, preserve the verified candidate on a dedicated branch, and run scripts/verify_git_integrity.py --require-release-sha after an immutable release commit exists.",
+    "Activate external providers one at a time with owner credentials and record evidence without secrets, treating Meta social publishing/inbox, WhatsApp, and commerce connectors as separate acceptance tracks; for commerce, run credentialed merchant-store Shopify OAuth/direct-token sync and webhook acceptance."
+  ]
+}

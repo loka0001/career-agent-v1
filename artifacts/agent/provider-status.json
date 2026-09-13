@@ -1,0 +1,151 @@
+{
+  "updated_at": "2026-09-07T07:26:46+03:00",
+  "last_local_artifact_verification": {
+      "timestamp": "2026-09-07T07:26:46+03:00",
+      "command": "uv run python scripts/verify_deployment_evidence.py; uv run python scripts/verify_provider_status.py; uv run python scripts/verify_environment_matrix.py; uv run python scripts/verify_env_example.py; uv run python scripts/verify_frontend_integration_wiring.py; uv run python scripts/verify_owner_actions.py; uv run python scripts/verify_production_access.py; uv run python scripts/verify_vercel_access_evidence.py; uv run python scripts/verify_operations_runbook.py; uv run python scripts/verify_repository_handoff_manifest.py; uv run python scripts/verify_readiness_artifacts.py; uv run python scripts/verify_release.py",
+      "result": "passed",
+      "notes": "Validated deployment evidence, allowed provider statuses, required fields, timestamp syntax, required environment key names without values, required provider coverage, secret-looking string patterns, environment-matrix coverage, .env.example coverage, frontend integration wiring, owner-action handoff coverage for provider-required key names, production-access metadata alignment, Vercel access evidence classification, operations runbook safety, 489-file repository handoff manifest integrity, readiness artifact integrity, and release source hygiene in a relocated source-only checkout."
+  },
+  "status_values": [
+    "production_verified",
+    "configured_awaiting_external_activation",
+    "blocked_missing_access",
+    "blocked_legal_or_business_acceptance",
+    "disabled",
+    "not_applicable"
+  ],
+  "providers": [
+    {
+      "provider": "vercel",
+      "status": "blocked_missing_access",
+      "account_or_project_identifier": "commerce-revenue-autopilot / prj_qd8XsbNvKkxWQvDqo5peOEUfgA2j / team_bGNbBWwra6PVZuM1WULcCW5r",
+      "required_environment_key_names": ["VERCEL_TOKEN", "VERCEL_ORG_ID", "VERCEL_PROJECT_ID"],
+      "required_keys_present": "not_present_in_local_runtime; connector can list team but cannot inspect target project",
+      "last_test": "On 2026-09-07 the connected Vercel account returned 404 Not Found for the recorded project ID and 403 Forbidden when listing that project's deployments. The local candidate still has no Git remote, immutable RELEASE_SHA, Vercel CLI, or non-empty VERCEL_TOKEN. The public URL is historical and fails the current candidate deployment smoke contract.",
+      "timestamp": "2026-09-07T07:26:46+03:00",
+      "safe_external_event_or_request_id": null,
+      "remaining_blocker": "Connected Vercel account can see the team but not the expected production project/deployment.",
+      "exact_owner_action": "Grant the connected Vercel account access to the existing commerce-revenue-autopilot project in team malek-virtz, or provide scoped CI/CLI credentials for that same project so preview and production deployments can be inspected and created."
+    },
+    {
+      "provider": "managed_postgresql",
+      "status": "blocked_missing_access",
+      "account_or_project_identifier": "safe provider identifier not available locally",
+      "required_environment_key_names": ["DATABASE_URL"],
+      "required_keys_present": "unknown_for_production_from_local_runtime",
+      "last_test": "A checksum-verified local PostgreSQL 17.10 cluster passed clean migration through all 30 revisions and upgrade from 20260728_0024 to 20260902_0030 on 2026-09-05. The historical public deployment returned database readiness, but the current candidate is not deployed or verified against that managed database.",
+      "timestamp": "2026-09-05T20:50:37+03:00",
+      "safe_external_event_or_request_id": null,
+      "remaining_blocker": "Managed-provider candidate migration and real provider-backup restore are not verified; local disposable migration and representative logical restore pass.",
+      "exact_owner_action": "Authorize a restore of the latest provider backup into a separate non-production PostgreSQL destination, then run core-record and tenant-boundary validation."
+    },
+    {
+      "provider": "postgres_backup_restore",
+      "status": "blocked_missing_access",
+      "account_or_project_identifier": "production database provider not identified safely in local evidence",
+      "required_environment_key_names": ["VERIFY_POSTGRES_URL", "EXPECTED_MIGRATION_HEAD"],
+      "required_keys_present": "A one-turn localhost-only disposable PostgreSQL URL was used for local verification and was not persisted; no managed verification URL is available.",
+      "last_test": "Matching PostgreSQL 17.10 pg_dump/pg_restore completed a real dump, schema drop, restore, and validation of migration marker, representative two-tenant commerce counts, COD totals, jobs, and tenant joins on 2026-09-05.",
+      "timestamp": "2026-09-05T20:50:37+03:00",
+      "safe_external_event_or_request_id": null,
+      "remaining_blocker": "The representative local logical restore passes, but a real provider backup has not been restored into a separate approved non-production destination.",
+      "exact_owner_action": "Provide a disposable restored PostgreSQL destination or CI runner with pg_dump/pg_restore and permission to validate a provider backup restore."
+    },
+    {
+      "provider": "resend_email",
+      "status": "configured_awaiting_external_activation",
+      "account_or_project_identifier": "not supplied",
+      "required_environment_key_names": ["EMAIL_PROVIDER", "RESEND_API_KEY", "EMAIL_FROM"],
+      "required_keys_present": "not_visible_in_local_runtime",
+      "last_test": "Local configuration validation now rejects EMAIL_PROVIDER=resend unless EMAIL_FROM is exactly one safe sender email address with a real domain shape and no header injection characters; tests/unit/test_config.py, Ruff, strict mypy, and format check passed. No live delivery evidence recorded.",
+      "timestamp": "2026-08-01T11:14:58+03:00",
+      "safe_external_event_or_request_id": null,
+      "remaining_blocker": "Verified sending domain, DNS, provider key, and delivery acceptance are missing.",
+      "exact_owner_action": "In Resend, verify the sending domain DNS and provide the production API key through Vercel environment variables."
+    },
+    {
+      "provider": "openai",
+      "status": "configured_awaiting_external_activation",
+      "account_or_project_identifier": "not supplied",
+      "required_environment_key_names": ["OPENAI_API_KEY", "OPENAI_BASE_URL", "OPENAI_MODEL"],
+      "required_keys_present": "not_visible_in_local_runtime",
+      "last_test": "Local integration status now reports deterministic AI as not configured in production, matching the fail-closed provider builder; OpenAI/Vercel AI Gateway request-scoped OIDC remains configured when AI_PROVIDER=openai and serverless gateway mode are set. tests/unit/test_integration_status.py, tests/unit/test_ai_provider_runtime.py, and tests/unit/test_config.py passed. No credentialed production generation evidence recorded.",
+      "timestamp": "2026-08-01T11:18:09+03:00",
+      "safe_external_event_or_request_id": null,
+      "remaining_blocker": "Production key/gateway credential and owner data policy are missing.",
+      "exact_owner_action": "Provide approved production OpenAI or gateway credentials and confirm the model/data-retention policy."
+    },
+    {
+      "provider": "meta_social",
+      "status": "configured_awaiting_external_activation",
+      "account_or_project_identifier": "not supplied; per-store Meta Page and Instagram Business credentials are stored through encrypted provider connections",
+      "required_environment_key_names": ["ENABLE_REAL_PUBLISHING", "META_GRAPH_API_BASE", "META_GRAPH_API_VERSION", "META_APP_ID", "META_APP_SECRET", "META_OAUTH_REDIRECT_URI", "META_REQUEST_TIMEOUT_SECONDS", "META_POLL_INTERVAL_SECONDS", "META_POLL_TIMEOUT_SECONDS"],
+      "required_keys_present": "not_visible_in_local_runtime",
+      "last_test": "Local code and API coverage include Meta OAuth account selection, encrypted per-store Facebook Page and Instagram Business connections, signed webhook handling for DM/comment channels, permission/token-expiry reporting, provider-aware publishing boundaries, and /api/v1/integrations/meta/check using current-store OAuth connections instead of forbidden global merchant credentials. No live Facebook or Instagram publishing/inbox event evidence recorded.",
+      "timestamp": "2026-08-01T12:19:42+03:00",
+      "safe_external_event_or_request_id": null,
+      "remaining_blocker": "Meta app credentials, merchant Facebook Page/Instagram Business assets, permissions, app review, and credentialed publish/inbox smoke tests are missing.",
+      "exact_owner_action": "Complete Meta app setup and review for Facebook Page and Instagram Business capabilities, connect the merchant accounts through the app OAuth flow, and run authorized publish plus inbound DM/comment webhook smoke tests."
+    },
+    {
+      "provider": "meta_whatsapp",
+      "status": "configured_awaiting_external_activation",
+      "account_or_project_identifier": "not supplied",
+      "required_environment_key_names": ["META_APP_ID", "META_APP_SECRET", "META_WHATSAPP_CONFIG_ID", "META_WHATSAPP_SOLUTION_ID", "META_OAUTH_REDIRECT_URI"],
+      "required_keys_present": "not_visible_in_local_runtime",
+      "last_test": "Local API coverage verifies signed webhook verification, duplicate-event safety, embedded signup flow, templates, media handling, consent audit, and ignoring signed webhook events for an unexpected WhatsApp phone_number_id. No authorized sandbox or production message evidence recorded.",
+      "timestamp": "2026-08-01T08:52:13+03:00",
+      "safe_external_event_or_request_id": null,
+      "remaining_blocker": "Business verification, phone ownership, permissions, templates, app review, and credentialed tests remain owner-controlled.",
+      "exact_owner_action": "Complete Meta Business and WhatsApp phone verification, approve required permissions/templates, and provide app credentials through Vercel environment variables."
+    },
+    {
+      "provider": "commerce_connectors",
+      "status": "configured_awaiting_external_activation",
+      "account_or_project_identifier": "not supplied; merchant store credentials and OAuth-installed Shopify tokens are stored per store in the encrypted provider-connection vault",
+      "required_environment_key_names": ["SHOPIFY_APP_API_KEY", "SHOPIFY_APP_API_SECRET", "SHOPIFY_OAUTH_REDIRECT_URI", "SHOPIFY_OAUTH_SCOPES", "SHOPIFY_API_VERSION", "COMMERCE_REQUEST_TIMEOUT_SECONDS", "INTEGRATION_ENCRYPTION_KEY", "PUBLIC_BASE_URL"],
+      "required_keys_present": "SHOPIFY OAuth/configuration key names, COMMERCE_REQUEST_TIMEOUT_SECONDS, INTEGRATION_ENCRYPTION_KEY, and PUBLIC_BASE_URL are represented in local configuration evidence; live merchant credentials are not visible in local runtime",
+      "last_test": "Local API coverage verifies Shopify OAuth start/callback/exchange, signed HMAC callback validation, invalid-HMAC rejection without consuming state, server-side token exchange, encrypted connection creation, Shopify app-secret webhook verification for OAuth-installed stores, webhook registration request, OAuth transaction completion/cleanup, direct token commerce connection, credential redaction, sync idempotency, webhook signature validation, webhook deduplication, job enqueueing, and tenant isolation. Integrations UI wiring plus frontend lint, tests, coverage, and production build pass. No credentialed merchant store sync is live verified.",
+      "timestamp": "2026-09-01T20:24:00+03:00",
+      "safe_external_event_or_request_id": null,
+      "remaining_blocker": "Merchant Shopify/WooCommerce/generic store credentials, Shopify app credentials/review where applicable, authorized production callback URL, and live sync acceptance are missing.",
+      "exact_owner_action": "Provide Shopify OAuth app credentials or an authorized merchant commerce store connection through the app, confirm webhook registration for the production callback URL, and run connection check, sync, signed webhook, duplicate-webhook, and tenant-isolation verification."
+    },
+    {
+      "provider": "media_malware",
+      "status": "configured_awaiting_external_activation",
+      "account_or_project_identifier": "database-backed media active; external object storage and malware scanner account not supplied",
+      "required_environment_key_names": ["IMAGE_STORAGE_PROVIDER", "CLOUDINARY_CLOUD_NAME", "CLOUDINARY_API_KEY", "CLOUDINARY_API_SECRET", "CLOUDINARY_TIMEOUT_SECONDS", "MALWARE_SCANNER", "CLAMAV_HOST", "CLAMAV_PORT", "MALWARE_SCAN_TIMEOUT_SECONDS"],
+      "required_keys_present": "IMAGE_STORAGE_PROVIDER present in prior production evidence; Cloudinary and ClamAV activation keys are not visible in local runtime",
+      "last_test": "Operator-facing integration status now reports database-backed media as configured, local media as not production-configured, full Cloudinary credentials as required for Cloudinary configured status, and malware_scanner status as visible/fail-closed in production. Focused integration-status tests passed; no live ClamAV or external object-storage acceptance recorded.",
+      "timestamp": "2026-08-01T11:31:28+03:00",
+      "safe_external_event_or_request_id": null,
+      "remaining_blocker": "External object storage account, malware scanner runtime, malware-scanning policy, and live upload/scan acceptance are missing if required before launch scale.",
+      "exact_owner_action": "Confirm whether database-backed media is sufficient for launch; if external media storage or malware scanning is required, provide Cloudinary and ClamAV runtime settings through Vercel environment variables, then run upload, private retrieval, clean-file scan, malware rejection, and scanner-outage tests."
+    },
+    {
+      "provider": "stripe",
+      "status": "configured_awaiting_external_activation",
+      "account_or_project_identifier": "not supplied",
+      "required_environment_key_names": ["STRIPE_SECRET_KEY", "STRIPE_WEBHOOK_SECRET", "STRIPE_PRICE_STARTER", "STRIPE_PRICE_GROWTH", "STRIPE_PRICE_PRO", "STRIPE_PAYMENT_WEBHOOK_SECRET"],
+      "required_keys_present": "not_visible_in_local_runtime",
+      "last_test": "Dormant Stripe code and tests are present; COD remains active.",
+      "timestamp": "2026-08-01T08:52:13+03:00",
+      "safe_external_event_or_request_id": null,
+      "remaining_blocker": "Merchant onboarding, live keys, legal approval, webhook verification, and authorized transaction are missing.",
+      "exact_owner_action": "Complete Stripe merchant onboarding and provide live keys/prices/webhook secrets only after legal and payment activation approval."
+    },
+    {
+      "provider": "sentry_alerting",
+      "status": "configured_awaiting_external_activation",
+      "account_or_project_identifier": "not supplied",
+      "required_environment_key_names": ["SENTRY_DSN"],
+      "required_keys_present": "not_visible_in_local_runtime",
+      "last_test": "Structured logging, operator alert rules, startup readiness warnings, and /operator/alerts redacted issue codes for missing SENTRY_DSN/OPERATOR_EMAILS/RELEASE_SHA exist locally; external alert delivery is not configured.",
+      "timestamp": "2026-08-01T09:04:49+03:00",
+      "safe_external_event_or_request_id": null,
+      "remaining_blocker": "Alert destination/DSN and delivery acceptance are missing.",
+      "exact_owner_action": "Create or connect the production Sentry/alerting destination and provide the DSN through Vercel environment variables."
+    }
+  ]
+}
