@@ -1,0 +1,16 @@
+.git
+.env
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.coverage
+htmlcov
+web/node_modules
+web/dist
+data/chroma
+data/uploads
+data/*.db
+*.zip

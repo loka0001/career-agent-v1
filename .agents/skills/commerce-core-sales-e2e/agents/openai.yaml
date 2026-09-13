@@ -1,0 +1,3 @@
+interface:
+  display_name: "Commerce Core Sales E2E"
+  short_description: "Verify the grounded sales journey"

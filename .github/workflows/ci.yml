@@ -1,0 +1,121 @@
+name: quality-gates
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  secret-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: astral-sh/setup-uv@v6
+      - name: Verify Git release integrity
+        env:
+          RELEASE_SHA: ${{ github.sha }}
+        run: uv run python scripts/verify_git_integrity.py --require-release-sha
+      - name: Verify provider activation evidence
+        run: uv run python scripts/verify_provider_status.py
+      - name: Verify environment matrix evidence
+        run: uv run python scripts/verify_environment_matrix.py
+      - name: Verify committed environment template
+        run: uv run python scripts/verify_env_example.py
+      - name: Verify deployment evidence consistency
+        run: uv run python scripts/verify_deployment_evidence.py
+      - name: Verify production access evidence
+        run: uv run python scripts/verify_production_access.py
+      - name: Verify Vercel access evidence
+        run: uv run python scripts/verify_vercel_access_evidence.py
+      - name: Verify operations runbooks
+        run: uv run python scripts/verify_operations_runbook.py
+      - name: Verify repository handoff manifest
+        run: uv run python scripts/verify_repository_handoff_manifest.py
+      - name: Verify readiness evidence artifacts
+        run: uv run python scripts/verify_readiness_artifacts.py
+      - run: uv run python scripts/verify_release.py
+
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: commerce
+          POSTGRES_PASSWORD: commerce_test
+          POSTGRES_DB: commerce_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U commerce -d commerce_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      APP_ENV: test
+      DEMO_MODE: "true"
+      DATABASE_URL: postgresql+psycopg://commerce:commerce_test@localhost:5432/commerce_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --all-groups --locked
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy --strict app scripts
+      - run: uv run alembic upgrade head
+      - run: uv run pytest --cov=app --cov-report=term-missing
+      - run: uvx pip-audit
+      - name: Verify PostgreSQL backup and restore
+        env:
+          VERIFY_POSTGRES_URL: postgresql://commerce:commerce_test@localhost:5432/commerce_test
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes postgresql-client
+          uv run python scripts/verify_backup_restore.py
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm audit --audit-level=high
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aquasecurity/trivy-action@0.31.0
+        with:
+          scan-type: fs
+          scan-ref: .
+          format: table
+          exit-code: "1"
+          severity: CRITICAL,HIGH
+          ignore-unfixed: true
+      - run: docker build --tag commerce-ai:${{ github.sha }} .
+      - uses: aquasecurity/trivy-action@0.31.0
+        with:
+          image-ref: commerce-ai:${{ github.sha }}
+          format: table
+          exit-code: "1"
+          severity: CRITICAL,HIGH
+          ignore-unfixed: true

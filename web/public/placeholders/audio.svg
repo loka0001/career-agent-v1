@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Audio product placeholder">
+  <rect width="640" height="420" rx="32" fill="#e7f0ff"/>
+  <path d="M210 220v-30c0-70 45-120 110-120s110 50 110 120v30" fill="none" stroke="#3157a4" stroke-width="30" stroke-linecap="round"/>
+  <rect x="175" y="200" width="85" height="145" rx="35" fill="#17366f"/>
+  <rect x="380" y="200" width="85" height="145" rx="35" fill="#17366f"/>
+  <text x="320" y="385" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#17366f">AUDIO</text>
+</svg>

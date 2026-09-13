@@ -1,0 +1,68 @@
+services:
+  commerce-ai:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      APP_ENV: development
+      DEMO_MODE: "true"
+      DATABASE_URL: sqlite:////var/lib/commerce/commerce.db
+      CHROMA_DIRECTORY: /var/lib/commerce/chroma
+      UPLOAD_DIRECTORY: /var/lib/commerce/uploads
+      PUBLIC_BASE_URL: http://localhost:8000
+      COOKIE_SECURE: "false"
+      AI_PROVIDER: deterministic
+      BILLING_PROVIDER: demo
+      PAYMENT_PROVIDER: demo
+      ENABLE_FAKE_PUBLISHING: "true"
+    volumes:
+      - commerce-data:/var/lib/commerce
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=5)"
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  commerce-worker:
+    build: .
+    command: ["python", "-m", "scripts.worker"]
+    ports:
+      - "8081:8081"
+    env_file:
+      - .env
+    environment:
+      APP_ENV: development
+      DEMO_MODE: "true"
+      DATABASE_URL: sqlite:////var/lib/commerce/commerce.db
+      CHROMA_DIRECTORY: /var/lib/commerce/chroma
+      UPLOAD_DIRECTORY: /var/lib/commerce/uploads
+      PUBLIC_BASE_URL: http://localhost:8000
+      COOKIE_SECURE: "false"
+      AI_PROVIDER: deterministic
+      BILLING_PROVIDER: demo
+      PAYMENT_PROVIDER: demo
+      ENABLE_FAKE_PUBLISHING: "true"
+      ENABLE_BACKGROUND_WORKER: "true"
+      WORKER_HEALTH_PORT: "8081"
+    volumes:
+      - commerce-data:/var/lib/commerce
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8081/health/ready', timeout=5)"
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  commerce-data:

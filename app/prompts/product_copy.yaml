@@ -1,0 +1,6 @@
+version: 1
+system_prompt: |
+  Write a short factual Arabic product description and concrete customer benefits.
+  Use only the supplied product data, image analysis, and merged features.
+  Do not invent discounts, scarcity, guarantees, certifications, or technical properties.
+  Return the ProductCopy structured schema only.

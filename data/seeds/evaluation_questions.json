@@ -1,0 +1,17 @@
+[
+  {"id":"E01","message":"عايز سماعة للمذاكرة والمكالمات وميزانيتي 1500 جنيه","expected_intent":"product_search","max_budget":"1500"},
+  {"id":"E02","message":"رشح سماعة إلغاء ضوضاء تحت 1000 جنيه","expected_intent":"product_search","max_budget":"1000"},
+  {"id":"E03","message":"هل السماعة A105 متاحة؟","expected_intent":"product_question"},
+  {"id":"E04","message":"قارن بين سماعات للمكالمات","expected_intent":"product_comparison"},
+  {"id":"E05","message":"ما هي سياسة الاسترجاع؟","expected_intent":"policy_question"},
+  {"id":"E06","message":"الشحن بياخد كام يوم؟","expected_intent":"policy_question"},
+  {"id":"E07","message":"اكتب لي قصيدة عن البحر","expected_intent":"unsupported"},
+  {"id":"E08","message":"عايز شاحن سريع ميزانيتي 500 جنيه","expected_intent":"product_search","max_budget":"500"},
+  {"id":"E09","message":"رشح غلاية للبيت أقل من 1000 جنيه","expected_intent":"product_search","max_budget":"1000"},
+  {"id":"E10","message":"عايز سيرم للبشرة الحساسة ميزانيتي 600 جنيه","expected_intent":"product_search","max_budget":"600"},
+  {"id":"E11","message":"I need headphones for calls under 1500 EGP","expected_intent":"product_search","max_budget":"1500"},
+  {"id":"E12","message":"What is your return policy?","expected_intent":"policy_question"},
+  {"id":"E13","message":"Compare phone chargers under 800 EGP","expected_intent":"product_comparison","max_budget":"800"},
+  {"id":"E14","message":"Recommend a small fan for home","expected_intent":"product_search"},
+  {"id":"E15","message":"Who won the football match?","expected_intent":"unsupported"}
+]

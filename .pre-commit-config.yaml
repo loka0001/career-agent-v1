@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: gitleaks
+        name: gitleaks staged secret scan
+        entry: python scripts/run_gitleaks.py git --pre-commit --staged --redact --no-banner
+        language: python
+        pass_filenames: false

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Home appliance placeholder">
+  <rect width="640" height="420" rx="32" fill="#fff2db"/>
+  <path d="M175 215 320 90l145 125v135H175z" fill="#995414"/>
+  <path d="M270 350V245h100v105" fill="#ffd58d"/>
+  <text x="320" y="395" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#743b08">HOME</text>
+</svg>

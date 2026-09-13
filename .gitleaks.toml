@@ -1,0 +1,9 @@
+title = "Commerce AI secret scanning"
+
+[allowlist]
+description = "Documented placeholders and generated public frontend assets"
+paths = [
+  '''\.env\.example$''',
+  '''web/dist/''',
+  '''public/''',
+]

@@ -1,0 +1,221 @@
+/* Commerce Revenue Autopilot — design.md v1.0 tokens and compatibility aliases. */
+:root,
+:root[data-theme="dark"] {
+  --color-bg-base: #0a0b0f;
+  --color-bg-elevated: #111319;
+  --color-surface-glass-1: rgba(255, 255, 255, 0.055);
+  --color-surface-glass-2: rgba(255, 255, 255, 0.09);
+  --color-surface-glass-3: rgba(255, 255, 255, 0.14);
+  --color-border-glass: rgba(255, 255, 255, 0.12);
+  --color-border-glass-strong: rgba(255, 255, 255, 0.22);
+  --color-text-primary: #f5f6fa;
+  --color-text-secondary: #aeb3c2;
+  --color-text-tertiary: #787e90;
+  --color-text-disabled: #4b4f5c;
+  --color-accent-blue: #0a84ff;
+  --color-accent-blue-hover: #3b9eff;
+  --color-accent-blue-active: #0868cc;
+  --color-accent-violet: #8b5cf6;
+  --color-accent-magenta: #c74fd1;
+  --color-success: #30d48a;
+  --color-success-bg: rgba(48, 212, 138, 0.14);
+  --color-warning: #f5a623;
+  --color-warning-bg: rgba(245, 166, 35, 0.14);
+  --color-danger: #ff5c5c;
+  --color-danger-bg: rgba(255, 92, 92, 0.14);
+  --color-info: #5ac8fa;
+
+  --gradient-primary: linear-gradient(135deg, #0a84ff 0%, #6e7cf6 100%);
+  --gradient-ai: linear-gradient(135deg, #0a84ff 0%, #8b5cf6 55%, #c74fd1 100%);
+  --gradient-glow-blue: radial-gradient(
+    circle,
+    rgba(10, 132, 255, 0.35) 0%,
+    rgba(10, 132, 255, 0) 70%
+  );
+  --gradient-mesh-hero:
+    radial-gradient(at 20% 20%, rgba(10, 132, 255, 0.25) 0, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.2) 0, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(199, 79, 209, 0.1) 0, transparent 50%);
+  --gradient-border-ai: linear-gradient(
+    135deg,
+    rgba(10, 132, 255, 0.6),
+    rgba(199, 79, 209, 0.6)
+  );
+
+  --text-display: 700 40px/48px "Manrope Variable", "IBM Plex Sans Arabic";
+  --text-h1: 700 28px/36px "Manrope Variable", "IBM Plex Sans Arabic";
+  --text-h2: 700 22px/30px "Manrope Variable", "IBM Plex Sans Arabic";
+  --text-h3: 600 18px/26px "Manrope Variable", "IBM Plex Sans Arabic";
+  --text-body-lg: 500 16px/24px "Manrope Variable", "IBM Plex Sans Arabic";
+  --text-body: 400 14px/20px "Manrope Variable", "IBM Plex Sans Arabic";
+  --text-body-sm: 400 13px/18px "Manrope Variable", "IBM Plex Sans Arabic";
+  --text-caption: 500 12px/16px "Manrope Variable", "IBM Plex Sans Arabic";
+  --text-metric: 700 32px/38px "Manrope Variable", "IBM Plex Sans Arabic";
+  --text-metric-sm: 700 20px/26px "Manrope Variable", "IBM Plex Sans Arabic";
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+  --blur-glass: blur(24px) saturate(140%);
+  --blur-glass-heavy: blur(40px) saturate(160%);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.32);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.44);
+  --glow-focus: 0 0 0 3px rgba(10, 132, 255, 0.35);
+  --glow-ai-soft: 0 0 24px rgba(139, 92, 246, 0.18);
+
+  --sidebar-width: 280px;
+  --sidebar-collapsed-width: 72px;
+  --topbar-height: 64px;
+  --max-width: 1440px;
+  --drawer-width: 480px;
+
+  /* Compatibility aliases used by the existing production components. */
+  --canvas: var(--color-bg-base);
+  --canvas-2: var(--color-bg-elevated);
+  --ink: var(--color-text-primary);
+  --muted: var(--color-text-secondary);
+  --faint: var(--color-text-tertiary);
+  --glass: var(--color-surface-glass-1);
+  --glass-strong: var(--color-surface-glass-2);
+  --glass-border: var(--color-border-glass);
+  --glass-border-strong: var(--color-border-glass-strong);
+  --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  --glass-blur: var(--blur-glass);
+  --primary: var(--color-accent-blue);
+  --primary-2: var(--color-accent-blue-hover);
+  --on-primary: #ffffff;
+  --cyan: var(--color-info);
+  --magenta: var(--color-accent-magenta);
+  --amber: var(--color-warning);
+  --gradient-brand: var(--gradient-primary);
+  --gradient-text: var(--gradient-ai);
+  --glow-primary: 0 10px 34px rgba(10, 132, 255, 0.32);
+  --success: var(--color-success);
+  --success-soft: var(--color-success-bg);
+  --success-text: #79e7b5;
+  --warning: var(--color-warning);
+  --warning-soft: var(--color-warning-bg);
+  --warning-text: #ffd38a;
+  --danger: var(--color-danger);
+  --danger-soft: var(--color-danger-bg);
+  --danger-text: #ffaaaa;
+  --info-soft: rgba(90, 200, 250, 0.14);
+  --info-text: #a9e5ff;
+  --radius-xs: var(--radius-sm);
+  --radius: var(--radius-lg);
+  --radius-pill: var(--radius-full);
+  --shadow-1: var(--shadow-md);
+  --shadow-2: var(--shadow-lg);
+  --focus-ring: 3px solid rgba(10, 132, 255, 0.7);
+
+  font-family:
+    "Manrope Variable",
+    "IBM Plex Sans Arabic",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: var(--color-text-primary);
+  background: var(--color-bg-base);
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --color-bg-base: #f3f4f7;
+  --color-bg-elevated: #ffffff;
+  --color-surface-glass-1: rgba(255, 255, 255, 0.65);
+  --color-surface-glass-2: rgba(255, 255, 255, 0.8);
+  --color-surface-glass-3: rgba(255, 255, 255, 0.92);
+  --color-border-glass: rgba(15, 17, 23, 0.1);
+  --color-border-glass-strong: rgba(15, 17, 23, 0.18);
+  --color-text-primary: #14161c;
+  --color-text-secondary: #4b4f5c;
+  --color-text-tertiary: #787e90;
+  --color-text-disabled: #a0a4ad;
+  --color-accent-blue: #0066e0;
+  --color-accent-blue-hover: #0a7cf5;
+  --color-accent-blue-active: #0056bd;
+  --color-success-bg: rgba(48, 212, 138, 0.1);
+  --color-warning-bg: rgba(245, 166, 35, 0.1);
+  --color-danger-bg: rgba(255, 92, 92, 0.1);
+  --gradient-primary: linear-gradient(135deg, #0066e0 0%, #6573e8 100%);
+  --gradient-ai: linear-gradient(135deg, #0066e0 0%, #7c4ee7 55%, #b642c0 100%);
+  --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  --success-text: #0c6b42;
+  --warning-text: #75500c;
+  --danger-text: #a42929;
+  --info-text: #075d85;
+  --shadow-md: 0 8px 24px rgba(30, 48, 80, 0.12);
+  --shadow-lg: 0 16px 48px rgba(30, 48, 80, 0.2);
+  color-scheme: light;
+}
+
+[dir="rtl"] {
+  font-family:
+    "IBM Plex Sans Arabic",
+    "Manrope Variable",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-weight: 500;
+}
+
+code,
+pre,
+kbd,
+.monospace,
+[data-monospace] {
+  font-family: "JetBrains Mono Variable", ui-monospace, monospace;
+  direction: ltr;
+}
+
+@supports not (
+  (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))
+) {
+  :root,
+  :root[data-theme="dark"] {
+    --color-surface-glass-1: #161820;
+    --color-surface-glass-2: #1c1f29;
+    --color-surface-glass-3: #252936;
+    --blur-glass: none;
+    --blur-glass-heavy: none;
+  }
+
+  :root[data-theme="light"] {
+    --color-surface-glass-1: #ffffff;
+    --color-surface-glass-2: #ffffff;
+    --color-surface-glass-3: #f8f9fb;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  :root,
+  :root[data-theme="dark"] {
+    --color-surface-glass-1: #161820;
+    --color-surface-glass-2: #1c1f29;
+    --color-surface-glass-3: #252936;
+    --blur-glass: none;
+    --blur-glass-heavy: none;
+  }
+
+  :root[data-theme="light"] {
+    --color-surface-glass-1: #ffffff;
+    --color-surface-glass-2: #ffffff;
+    --color-surface-glass-3: #f8f9fb;
+  }
+}

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Commerce Handoff Sync"
+  short_description: "Reconcile source, docs, and evidence"

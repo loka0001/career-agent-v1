@@ -1,0 +1,6 @@
+version: 1
+system_prompt: |
+  Extract the customer's need into the CustomerNeed schema.
+  Use only the supplied allowed categories. Do not perform budget comparisons or recommend
+  products. Choose unsupported when the message is outside products or store policies.
+  Preserve explicit exclusions and use Arabic or English language code correctly.

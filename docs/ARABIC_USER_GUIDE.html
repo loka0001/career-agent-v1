@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دليل استخدام وفحص Commerce Revenue Autopilot</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #586174;
+      --line: #d9dee8;
+      --paper: #ffffff;
+      --soft: #f4f6f9;
+      --brand: #146c5f;
+      --accent: #b6532d;
+      --ok: #177245;
+      --warn: #9a5b00;
+      --bad: #b42318;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--soft);
+      color: var(--ink);
+      font-family: Tahoma, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: 0;
+    }
+    header {
+      background: #10243f;
+      color: #fff;
+      padding: 38px 20px 30px;
+      border-bottom: 6px solid var(--accent);
+    }
+    header .inner, main, footer { width: min(1040px, calc(100% - 32px)); margin-inline: auto; }
+    h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.35; }
+    h2 { margin: 42px 0 14px; font-size: 1.55rem; border-right: 5px solid var(--brand); padding-right: 12px; }
+    h3 { margin: 26px 0 8px; font-size: 1.15rem; }
+    p { margin: 8px 0 14px; }
+    a { color: #075e9c; }
+    main { padding-block: 26px 56px; }
+    nav, .panel, table, .callout {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+    nav { padding: 18px 22px; }
+    nav ul { columns: 2; margin: 8px 0 0; }
+    .panel { padding: 18px 22px; margin-block: 14px; }
+    .quick { border-top: 5px solid var(--brand); }
+    .callout { padding: 12px 16px; margin: 14px 0; border-right-width: 5px; }
+    .ok { border-right-color: var(--ok); }
+    .warn { border-right-color: var(--warn); }
+    .danger { border-right-color: var(--bad); }
+    ul, ol { padding-right: 24px; }
+    li { margin-block: 5px; }
+    code, pre, .ltr {
+      direction: ltr;
+      text-align: left;
+      unicode-bidi: embed;
+      font-family: Consolas, "Courier New", monospace;
+    }
+    code { background: #edf0f5; border-radius: 4px; padding: 2px 6px; }
+    pre {
+      background: #111827;
+      color: #eef2f7;
+      padding: 16px;
+      border-radius: 6px;
+      overflow: auto;
+      line-height: 1.55;
+    }
+    table { width: 100%; border-collapse: collapse; overflow: hidden; margin-block: 14px; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: right; vertical-align: top; }
+    th { background: #e8edf3; }
+    tr:last-child td { border-bottom: 0; }
+    .status { font-weight: 700; white-space: nowrap; }
+    .tag { display: inline-block; border: 1px solid var(--line); padding: 1px 8px; border-radius: 4px; font-size: .88rem; }
+    footer { padding: 24px 0 42px; color: var(--muted); border-top: 1px solid var(--line); }
+    @media (max-width: 700px) {
+      nav ul { columns: 1; }
+      table { display: block; overflow-x: auto; }
+      body { font-size: 15px; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      header { background: #fff; color: #000; border-bottom: 2px solid #000; padding-top: 12px; }
+      main, header .inner, footer { width: 100%; }
+      nav { break-after: page; }
+      .panel, .callout, table { break-inside: avoid; }
+      a { color: #000; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <h1>دليل استخدام وفحص Commerce Revenue Autopilot</h1>
+      <p>مرجع عربي مختصر للبدء السريع، ومرجع كامل لاختبار المنتج قبل عرضه على عميل حقيقي.</p>
+    </div>
+  </header>
+
+  <main>
+    <nav aria-label="فهرس الدليل">
+      <strong>المحتويات</strong>
+      <ul>
+        <li><a href="#quick">التشغيل في خمس دقائق</a></li>
+        <li><a href="#modes">الفرق بين الوضع التجريبي والحي</a></li>
+        <li><a href="#workflow">دورة الاستخدام اليومية</a></li>
+        <li><a href="#channels">ربط القنوات والموقع</a></li>
+        <li><a href="#content">إنشاء محتوى السوشيال</a></li>
+        <li><a href="#inspection">خطة الفحص الكاملة</a></li>
+        <li><a href="#acceptance">معايير الجاهزية للبيع</a></li>
+        <li><a href="#troubleshooting">حل المشكلات</a></li>
+      </ul>
+    </nav>
+
+    <section id="quick">
+      <h2>التشغيل في خمس دقائق</h2>
+      <div class="panel quick">
+        <ol>
+          <li>افتح رابط المنتج:
+            <a class="ltr" href="http://127.0.0.1:5173">
+              http://127.0.0.1:5173 (local demo)
+            </a>
+          </li>
+          <li>سجل الدخول بالحساب التجريبي:
+            <div class="ltr"><code>merchant@example.com</code></div>
+            <div class="ltr"><code>one-time password printed by scripts.bootstrap_env</code></div>
+          </li>
+          <li>افتح <strong>مركز القيادة</strong> وتأكد أن مؤشرات المبيعات والفرص والطلبات ظاهرة.</li>
+          <li>افتح <strong>المنتجات</strong> وتأكد أن الكتالوج يحتوي على 24 منتجًا تجريبيًا.</li>
+          <li>افتح <strong>المبيعات</strong> واكتب: «عايز سماعة للمكالمات والمذاكرة أقل من 1500 جنيه».</li>
+          <li>تأكد أن الرد يعرض منتجات حقيقية من الكتالوج مع السعر والمخزون وأسباب الترشيح.</li>
+        </ol>
+      </div>
+      <div class="callout warn">
+        بيانات الدخول السابقة للعرض التجريبي فقط. أنشئ مؤسسة ومستخدمًا جديدًا لكل عميل، ولا تسلم حسابًا مشتركًا في التشغيل الفعلي.
+      </div>
+    </section>
+
+    <section id="modes">
+      <h2>الوضع التجريبي والوضع الحي</h2>
+      <table>
+        <thead><tr><th>الجزء</th><th>تجريبي</th><th>حي</th></tr></thead>
+        <tbody>
+          <tr><td>المساعد والاقتراحات</td><td>محرك حتمي يعمل بلا مفتاح خارجي</td><td>يمكن تفعيل مزود ذكاء اصطناعي بمفتاح التاجر</td></tr>
+          <tr><td>النشر</td><td>يحفظ نتيجة نشر تجريبية وسجل تدقيق</td><td>ينشر على صفحة Facebook وحساب Instagram المملوكين للتاجر</td></tr>
+          <tr><td>WhatsApp</td><td>محاكاة إرسال واستقبال وحالات الرسالة</td><td>WhatsApp Cloud API برقم وحساب أعمال فعليين</td></tr>
+          <tr><td>الدفع</td><td>Checkout موقع وموقّع بلا تحصيل مالي</td><td>يحتاج بوابة دفع وحساب تاجر ومفاتيح Webhook</td></tr>
+        </tbody>
+      </table>
+      <div class="callout danger">
+        لا تستخدم مفاتيح عامة أو مسربة. مفاتيح Meta وWhatsApp والدفع تخص العميل ويجب حفظها كمتغيرات سرية في منصة الاستضافة.
+      </div>
+    </section>
+
+    <section id="workflow">
+      <h2>دورة الاستخدام اليومية</h2>
+      <h3>1. مركز القيادة</h3>
+      <p>ابدأ منه لمراجعة الفرص ذات القيمة، الطلبات التي تحتاج متابعة، المحتوى المنتظر موافقة، ونتائج الأتمتة.</p>
+
+      <h3>2. إدارة المنتجات</h3>
+      <ol>
+        <li>أضف المنتج بالاسم والتصنيف والسعر والمخزون والمزايا.</li>
+        <li>ارفع صورة PNG أو JPEG أو WebP.</li>
+        <li>راجع الحقائق المستخرجة ثم فعّل المنتج.</li>
+        <li>اختبر البحث عنه بعبارة عربية مختلفة عن اسمه الحرفي.</li>
+      </ol>
+
+      <h3>3. صندوق الرسائل والمبيعات</h3>
+      <p>تظهر محادثات الموقع وWhatsApp وMessenger وInstagram والتعليقات في مكان واحد. افتح المحادثة، راجع نية العميل، ثم اعتمد الرد أو أنشئ طلبًا.</p>
+
+      <h3>4. الطلبات والعملاء</h3>
+      <p>راجع عناصر الطلب والسعر والحالة. الانتقال إلى <span class="tag">pending</span> يحجز المخزون، والإلغاء يعيده. ملف العميل يعرض السجل والاهتمامات والرضا والاحتمال الشرائي ومخاطر التوقف.</p>
+
+      <h3>5. محرك فرص الإيراد</h3>
+      <p>يعرض فرصًا قابلة للتنفيذ مثل نية شراء لم تُغلق، إعادة شراء، cross-sell، بديل لنفاد المخزون، أو فجوة محتوى. كل فرصة لها سبب وقيمة متوقعة وإجراء وموافقة وتتبع نتيجة.</p>
+
+      <h3>6. الأتمتة</h3>
+      <p>أنشئ Trigger وشروطًا وتأخيرًا وإجراءً. اختبر الأتمتة في الوضع التجريبي، راجع سجل التشغيل والمحاولات، ثم فعّلها على قناة حية بعد موافقة العميل.</p>
+    </section>
+
+    <section id="channels">
+      <h2>ربط القنوات والموقع</h2>
+      <h3>Facebook وInstagram</h3>
+      <ol>
+        <li>يملك العميل Meta Business وحساب Facebook Page وحساب Instagram Professional مرتبطًا بالصفحة.</li>
+        <li>أنشئ Meta App وأضف Facebook Login وWebhooks والمنتجات المطلوبة.</li>
+        <li>ضع App ID وApp Secret وOAuth callback في متغيرات Vercel السرية.</li>
+        <li>نفذ الربط من صفحة التكاملات واختر الصفحة وحساب Instagram.</li>
+        <li>شغّل فحص الاتصال للقراءة فقط قبل السماح بالنشر أو الرد.</li>
+        <li>نفذ منشور اختبار واحد بعد الموافقة وراجع Provider ID وسجل التدقيق.</li>
+      </ol>
+
+      <h3>WhatsApp Business</h3>
+      <ol>
+        <li>أدخل Phone Number ID وWhatsApp Business Account ID وAccess Token وApp Secret وVerify Token.</li>
+        <li>سجل رابط Webhook الذي تعرضه صفحة التكاملات لدى Meta.</li>
+        <li>اختبر رسالة واردة، وحالات sent وdelivered وread وfailed.</li>
+        <li>اختبر الرد داخل نافذة 24 ساعة، ثم Template معتمد خارجها.</li>
+        <li>اختبر opt-out وتأكد أن الأتمتة لا ترسل بعد سحب الموافقة.</li>
+      </ol>
+
+      <h3>موقع العميل</h3>
+      <ol>
+        <li>أنشئ API key مخصصًا للموقع بأقل صلاحيات لازمة.</li>
+        <li>انسخ كود Widget من إعدادات الموقع وضعه قبل إغلاق وسم <code>&lt;/body&gt;</code>.</li>
+        <li>اضبط الدومين المسموح، ولا تستخدم <code>*</code> في الإنتاج.</li>
+        <li>اختبر فتح المحادثة والمنتجات والحدث التحليلي والطلب من نافذة خاصة.</li>
+      </ol>
+    </section>
+
+    <section id="content">
+      <h2>إنشاء محتوى السوشيال</h2>
+      <ol>
+        <li>افتح <strong>استوديو المحتوى</strong> واختر المنتج والمنصة والهدف ونبرة العلامة.</li>
+        <li>أنشئ الفكرة والكابشن والوسوم والدعوة لاتخاذ إجراء.</li>
+        <li>راجع السعر والمخزون والمواصفات؛ النظام يمنع الادعاءات غير الموجودة في الكتالوج.</li>
+        <li>أعد توليد القسم المطلوب فقط بدل إعادة الحملة بالكامل.</li>
+        <li>اعتمد المحتوى وحدد موعده في التقويم.</li>
+        <li>في الوضع الحي، راجع الصورة ونسبة أبعادها وصلاحية Token ثم انشر.</li>
+        <li>بعد النشر راقب التفاعل والمحادثات والطلبات المنسوبة للحملة.</li>
+      </ol>
+    </section>
+
+    <section id="inspection">
+      <h2>خطة الفحص الكاملة</h2>
+      <h3>أ. فحص البنية</h3>
+      <pre>GET /health/live
+GET /health/ready
+GET /docs</pre>
+      <p>النتيجة المطلوبة: HTTP 200، وداخل readiness تكون <code>database</code> و<code>search</code> و<code>job_queue</code> بقيمة <code>true</code>.</p>
+
+      <h3>ب. فحص رحلة البيع</h3>
+      <ol>
+        <li>سجل مؤسسة جديدة ومتجرًا جديدًا.</li>
+        <li>أضف منتجين وفعّلهما.</li>
+        <li>اسأل بالعربية عن منتج تحت ميزانية محددة.</li>
+        <li>حوّل الترشيح إلى طلب Draft ثم Pending.</li>
+        <li>تأكد أن المخزون انخفض مرة واحدة فقط.</li>
+        <li>ألغ الطلب وتأكد أن المخزون عاد.</li>
+        <li>راجع العميل والفرصة وسجل التدقيق والتحليلات.</li>
+      </ol>
+
+      <h3>ج. فحص المحتوى</h3>
+      <ol>
+        <li>أنشئ Post وStory وحملة من عدة منشورات.</li>
+        <li>تأكد أن الكابشن والوسوم موجودة وأن الحقائق مطابقة للمنتج.</li>
+        <li>اختبر الرفض والتعديل والموافقة والجدولة والنشر التجريبي.</li>
+      </ol>
+
+      <h3>د. فحص الأمان والعزل</h3>
+      <ol>
+        <li>تأكد أن صفحات الإدارة لا تعمل بدون جلسة.</li>
+        <li>اختبر رفض POST بدون CSRF بعد تسجيل الدخول.</li>
+        <li>أنشئ متجرين وتأكد أن مستخدم متجر لا يقرأ منتجات أو عملاء المتجر الآخر.</li>
+        <li>كرر تسجيل الدخول الخاطئ وتأكد من ظهور HTTP 429.</li>
+        <li>تأكد أن الاستجابات لا تعرض Tokens أو Secrets.</li>
+      </ol>
+
+      <h3>هـ. فحص الواجهة</h3>
+      <ol>
+        <li>اختبر عرض 390px والهاتف الأفقي وسطح المكتب.</li>
+        <li>اختبر العربية RTL والإنجليزية LTR والوضعين الفاتح والداكن.</li>
+        <li>تأكد من عدم وجود تمرير أفقي أو نص مقطوع أو عناصر متداخلة.</li>
+        <li>فعّل Reduce Motion من النظام وتأكد أن الوظائف تظل واضحة.</li>
+        <li>افتح Developer Tools وتأكد من عدم وجود أخطاء Console أو طلبات 4xx/5xx غير متوقعة.</li>
+      </ol>
+
+      <h3>و. أوامر الجودة للمطور</h3>
+      <pre>cd path\to\commerce-ai-mvp
+uv run pytest -q
+uv run mypy --strict app scripts
+uv run ruff check app tests scripts
+
+npm --prefix web run lint
+npm --prefix web run test
+npm --prefix web run build</pre>
+    </section>
+
+    <section id="acceptance">
+      <h2>معايير الجاهزية للبيع</h2>
+      <table>
+        <thead><tr><th>المعيار</th><th>القبول</th></tr></thead>
+        <tbody>
+          <tr><td>التشغيل</td><td>الرابط العام وlive وready يعيدون 200 بلا حماية Vercel.</td></tr>
+          <tr><td>البيانات</td><td>PostgreSQL مملوك للعميل وله Backup واستعادة مجربة.</td></tr>
+          <tr><td>البيع</td><td>البحث والطلب وحجز المخزون والإلغاء يعملون بلا تضارب.</td></tr>
+          <tr><td>القنوات</td><td>كل قناة حية اجتازت inbound وoutbound وwebhook وtoken expiry.</td></tr>
+          <tr><td>المحتوى</td><td>الموافقة والجدولة والنشر والتتبع تعمل بمنتج حقيقي.</td></tr>
+          <tr><td>الأمان</td><td>عزل المتاجر وCSRF وrate limits وإخفاء الأسرار تم اختبارها.</td></tr>
+          <tr><td>المراقبة</td><td>Runtime logs وrequest IDs وتنبيه الأخطاء متاحة للمشغل.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="troubleshooting">
+      <h2>حل المشكلات الشائعة</h2>
+      <table>
+        <thead><tr><th>العرض</th><th>الإجراء</th></tr></thead>
+        <tbody>
+          <tr><td>تحويل إلى صفحة دخول Vercel</td><td>اجعل Vercel Authentication = None للمشروع الإنتاجي.</td></tr>
+          <tr><td>FUNCTION_INVOCATION_FAILED</td><td>راجع Runtime Logs، ومتغيرات APP_SECRET_KEY وDATABASE_URL، ثم اختبر استيراد FastAPI.</td></tr>
+          <tr><td>readiness يفشل في database</td><td>راجع Neon وحالة الاتصال وSSL والمستخدم والصلاحيات والمنطقة.</td></tr>
+          <tr><td>الرد لا يجد منتجًا</td><td>تأكد أن المنتج Active وله مخزون، ثم راجع الاسم والتصنيف والمزايا.</td></tr>
+          <tr><td>فشل نشر Meta</td><td>راجع الصلاحيات وToken expiry وربط Instagram بالصفحة ورابط الصورة العام.</td></tr>
+          <tr><td>Webhook مكرر</td><td>راجع idempotency key؛ يجب ألا ينشئ رسالة أو طلبًا مرتين.</td></tr>
+          <tr><td>429 Too Many Requests</td><td>انتظر مدة Retry-After ولا تعطل الحماية في الإنتاج.</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>هذا الدليل يفرق صراحة بين الوظائف التي تعمل داخل المنتج وبين الخدمات التي لا تعمل حيًا إلا بحسابات ومفاتيح يملكها التاجر.</p>
+  </footer>
+</body>
+</html>

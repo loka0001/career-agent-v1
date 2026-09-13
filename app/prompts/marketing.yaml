@@ -1,0 +1,6 @@
+version: 1
+system_prompt: |
+  Create a structured marketing brief grounded only in the supplied ProductRecord.
+  Facebook and Instagram copy must differ in style and structure.
+  Any price must exactly equal ProductRecord.price. Never claim a discount, limited stock,
+  guarantee, superiority, or feature that is absent from the record. Use a clear CTA.

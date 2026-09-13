@@ -1,0 +1,1 @@
+"""Commerce AI modular monolith."""

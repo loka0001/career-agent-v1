@@ -1,55 +1,90 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
 [project]
-name = "ai-career-assistant"
-version = "1.0.0"
-description = "An AI-powered career assistant with modular architecture"
-authors = [
-    {name = "Amir Nathoo", email = "amir@example.com"}
-]
-readme = "README.md"
-license = {text = "MIT"}
-requires-python = ">=3.8"
+name = "commerce-ai-mvp"
+version = "0.1.0"
+description = "Arabic-first commerce AI MVP for product onboarding, publishing, and grounded sales assistance."
+requires-python = ">=3.11,<3.14"
 dependencies = [
-    "requests",
-    "python-dotenv", 
-    "gradio",
-    "pypdf",
-    "openai",
-    "openai-agents"
+  "alembic==1.18.4",
+  "cloudinary==1.44.1",
+  "cryptography==48.0.1",
+  "fastapi==0.139.2",
+  "httpx==0.28.1",
+  "langchain-openai==1.3.5",
+  "pydantic==2.13.4",
+  "pydantic-settings==2.14.2",
+  "psycopg[binary]==3.2.12",
+  "python-multipart==0.0.32",
+  "PyYAML==6.0.3",
+  "sentry-sdk[fastapi]==2.42.1",
+  "SQLAlchemy==2.0.48",
+  "uvicorn[standard]==0.51.0",
+]
+
+[dependency-groups]
+dev = [
+  "httpx2>=2.9.1",
+  "mypy==1.19.1",
+  "pytest==9.1.1",
+  "pytest-cov==7.0.0",
+  "ruff==0.15.7",
+  "types-PyYAML==6.0.12.20250915",
 ]
 
 [project.optional-dependencies]
-dev = [
-    "pytest",
-    "black",
-    "ruff",
-    "mypy"
+chroma = [
+  "chromadb==1.5.9",
 ]
 
-[project.urls]
-Repository = "https://github.com/amirna2/agents"
-Documentation = "https://github.com/amirna2/agents/tree/main/1_foundations/community_contributions/amirna2_contributions/personal-ai"
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
 
-[project.scripts]
-ai-career-assistant = "main:main"
+[tool.vercel]
+entrypoint = "app.main:app"
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+[tool.vercel.scripts]
+build = "python scripts/vercel_build.py"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+markers = [
+  "live: requires external credentials and explicit opt-in",
+  "e2e: browser or full-stack end-to-end test",
+]
 
 [tool.ruff]
-line-length = 88
-target-version = "py38"
+target-version = "py311"
+line-length = 100
+extend-exclude = [
+  "alembic/versions",
+  "agents",
+  "api",
+  "core",
+  "dashboard",
+  "rag",
+  "tools",
+  "workflow",
+  "bootstrap.py",
+]
 
 [tool.ruff.lint]
-select = ["E", "F", "W", "I"]
-ignore = ["E501"]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["RUF001"]
 
-[tool.black]
-line-length = 88
-target-version = ['py38']
+[tool.ruff.format]
+quote-style = "double"
 
 [tool.mypy]
-python_version = "3.8"
-warn_return_any = true
-warn_unused_configs = true
-disallow_untyped_defs = true
+python_version = "3.12"
+plugins = ["pydantic.mypy"]
+strict = true
+warn_unused_ignores = true
+exclude = ["alembic/"]
+
+[[tool.mypy.overrides]]
+module = ["chromadb.*", "cloudinary.*", "langchain_openai.*"]
+ignore_missing_imports = true

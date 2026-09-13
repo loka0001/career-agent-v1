@@ -1,0 +1,8 @@
+[
+  {"policy_type":"shipping","title":"سياسة الشحن داخل مصر","body":"يتم تجهيز الطلب خلال يومي عمل، ثم يستغرق التوصيل من 2 إلى 5 أيام عمل حسب المحافظة. تظهر تكلفة الشحن قبل تأكيد الطلب.","source_ref":"policy:shipping-ar-v1"},
+  {"policy_type":"returns","title":"سياسة الاسترجاع","body":"يمكن طلب الاسترجاع خلال 14 يومًا من الاستلام إذا كان المنتج غير مستخدم وفي عبوته الأصلية. المنتجات المفتوحة للعناية بالبشرة لا تُسترجع لأسباب صحية إلا عند وجود عيب.","source_ref":"policy:returns-ar-v1"},
+  {"policy_type":"warranty","title":"سياسة الضمان","body":"يطبق ضمان العيوب الصناعية المذكور في صفحة كل منتج. لا يشمل الضمان التلف الناتج عن سوء الاستخدام أو السوائل.","source_ref":"policy:warranty-ar-v1"},
+  {"policy_type":"shipping","title":"Egypt Shipping Policy","body":"Orders are prepared within two business days. Delivery takes 2 to 5 business days depending on the governorate, and the fee is shown before confirmation.","source_ref":"policy:shipping-en-v1"},
+  {"policy_type":"returns","title":"Return Policy","body":"A return can be requested within 14 days of delivery when the product is unused and in its original packaging. Open skincare products are excluded unless defective.","source_ref":"policy:returns-en-v1"},
+  {"policy_type":"warranty","title":"Warranty Policy","body":"Only the manufacturing warranty stated on the product page applies. Damage caused by misuse or liquids is excluded.","source_ref":"policy:warranty-en-v1"}
+]
