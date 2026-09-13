@@ -19,9 +19,6 @@ jobs:
         env:
           RELEASE_SHA: ${{ github.sha }}
         run: python3 scripts/verify_git_integrity.py --require-release-sha
-      - uses: gitleaks/gitleaks-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: astral-sh/setup-uv@v6
       - name: Verify provider activation evidence
         run: uv run python scripts/verify_provider_status.py
@@ -42,6 +39,9 @@ jobs:
       - name: Verify readiness evidence artifacts
         run: uv run python scripts/verify_readiness_artifacts.py
       - run: uv run python scripts/verify_release.py
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   backend:
     runs-on: ubuntu-latest

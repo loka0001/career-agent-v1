@@ -98,7 +98,7 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "5a3629cf6f729b01c4059305689de1faee15fe8a6269a9d6c3e2adb89ec2b302",
+      "sha256": "4d4db00d1463ed832c7359661aa4c2900c0c7b938e6bfd0fb6a5fce5caba994b",
       "size_bytes": 3940
     },
     {
@@ -138,8 +138,8 @@
     },
     {
       "path": "Dockerfile",
-      "sha256": "6bb71f32bc5b69cbcd17f85cf67e794da2a23e83ff973cd6ff2fda4d23bd23ea",
-      "size_bytes": 671
+      "sha256": "9629beb84edad7eb02d4230f4b367b073264d5577834598650266561e2d0d1f1",
+      "size_bytes": 769
     },
     {
       "path": "FINAL_REPORT.md",
@@ -2597,7 +2597,7 @@
       "size_bytes": 1153
     }
   ],
-  "generated_at": "2026-09-13T05:55:34.027936+00:00",
+  "generated_at": "2026-09-13T06:01:13.896279+00:00",
   "purpose": "Verify the local source/config/docs handoff into the canonical Git repository.",
   "root": "."
 }

@@ -10,7 +10,11 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     APP_ENV=production
 WORKDIR /app
-RUN addgroup --system commerce && adduser --system --ingroup commerce commerce
+RUN apt-get update \
+    && apt-get upgrade --yes \
+    && rm -rf /var/lib/apt/lists/* \
+    && addgroup --system commerce \
+    && adduser --system --ingroup commerce commerce
 COPY pyproject.toml README.md ./
 COPY app/ app/
 RUN pip install --no-cache-dir .
