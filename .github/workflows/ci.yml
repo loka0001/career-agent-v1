@@ -18,11 +18,11 @@ jobs:
       - uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: astral-sh/setup-uv@v6
       - name: Verify Git release integrity
         env:
           RELEASE_SHA: ${{ github.sha }}
-        run: uv run python scripts/verify_git_integrity.py --require-release-sha
+        run: python3 scripts/verify_git_integrity.py --require-release-sha
+      - uses: astral-sh/setup-uv@v6
       - name: Verify provider activation evidence
         run: uv run python scripts/verify_provider_status.py
       - name: Verify environment matrix evidence
@@ -66,7 +66,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
-      - run: uv sync --all-groups --locked
+      - run: uv sync --all-groups --all-extras --locked
       - run: uv run ruff check .
       - run: uv run ruff format --check .
       - run: uv run mypy --strict app scripts
@@ -103,7 +103,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: aquasecurity/trivy-action@0.31.0
+      - uses: aquasecurity/trivy-action@0.36.0
         with:
           scan-type: fs
           scan-ref: .
@@ -112,7 +112,7 @@ jobs:
           severity: CRITICAL,HIGH
           ignore-unfixed: true
       - run: docker build --tag commerce-ai:${{ github.sha }} .
-      - uses: aquasecurity/trivy-action@0.31.0
+      - uses: aquasecurity/trivy-action@0.36.0
         with:
           image-ref: commerce-ai:${{ github.sha }}
           format: table
